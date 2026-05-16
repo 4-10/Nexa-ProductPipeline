@@ -50,20 +50,60 @@ Use the URL returned by `gh issue create`:
 
 ```powershell
 $createdIssueUrl = "https://github.com/4-10/Nexa-ProductPipeline/issues/1"
-gh project item-add 4 --owner 4-10 --url $createdIssueUrl
+$itemId = gh project item-add 4 --owner 4-10 --url $createdIssueUrl --format json --jq '.id'
 ```
 
-Expected: command returns the Project item id.
+Expected: `$itemId` contains the Project item id returned by `gh project item-add`.
 
 ## Set Project Fields
 
-Confirm field and option ids before setting Project fields:
+Run these commands only after Richard has approved the proposal item and the issue has been created and added to Project 4.
+
+Capture the Project id and the Project field metadata:
 
 ```powershell
-gh project field-list 4 --owner 4-10
+$projectId = gh project view 4 --owner 4-10 --format json --jq '.id'
+$fields = gh project field-list 4 --owner 4-10 --format json | ConvertFrom-Json
 ```
 
-Set `Work Type`, `Readiness Gate`, and `Module Boundary` to match the approved proposal. For GitHub Projects v2, use the field ids and single-select option ids returned by `gh project field-list` with `gh project item-edit`.
+Capture the field ids:
+
+```powershell
+$workTypeFieldId = ($fields.fields | Where-Object { $_.name -eq "Work Type" }).id
+$readinessGateFieldId = ($fields.fields | Where-Object { $_.name -eq "Readiness Gate" }).id
+$moduleBoundaryFieldId = ($fields.fields | Where-Object { $_.name -eq "Module Boundary" }).id
+```
+
+Capture the single-select option ids that match the approved proposal. Example values:
+
+```powershell
+$workTypeOptionId = (($fields.fields | Where-Object { $_.name -eq "Work Type" }).options | Where-Object { $_.name -eq "Story" }).id
+$readinessGateOptionId = (($fields.fields | Where-Object { $_.name -eq "Readiness Gate" }).options | Where-Object { $_.name -eq "Dev Ready" }).id
+$moduleBoundaryOptionId = (($fields.fields | Where-Object { $_.name -eq "Module Boundary" }).options | Where-Object { $_.name -eq "Product Pipeline" }).id
+```
+
+Verify all ids were captured before editing fields:
+
+```powershell
+$projectId
+$itemId
+$workTypeFieldId
+$workTypeOptionId
+$readinessGateFieldId
+$readinessGateOptionId
+$moduleBoundaryFieldId
+$moduleBoundaryOptionId
+```
+
+Set `Work Type`, `Readiness Gate`, and `Module Boundary` one field at a time:
+
+```powershell
+gh project item-edit --id $itemId --project-id $projectId --field-id $workTypeFieldId --single-select-option-id $workTypeOptionId
+gh project item-edit --id $itemId --project-id $projectId --field-id $readinessGateFieldId --single-select-option-id $readinessGateOptionId
+gh project item-edit --id $itemId --project-id $projectId --field-id $moduleBoundaryFieldId --single-select-option-id $moduleBoundaryOptionId
+```
+
+Expected: each `gh project item-edit` command succeeds without changing any field outside the approved proposal.
 
 ## Verify
 
