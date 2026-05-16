@@ -196,3 +196,61 @@ Do not create an issue when:
 - design is needed but not marked,
 - Work Type, Readiness Gate, or Module Boundary is missing,
 - Project lookup, field lookup, or option lookup fails.
+
+## Rollback And Recovery Conditions
+
+If any mutation succeeds and a later step fails, stop immediately. Do not continue creating more issues or Project items. Summarize the partial output, confirm the recovery action with Richard, then use the smallest cleanup that restores the approved state.
+
+### Issue Created But Project Item Add Fails
+
+Condition: `$createdIssueUrl` exists, but `$itemId` was not created.
+
+Recovery after Richard confirms cleanup:
+
+```powershell
+gh issue close $createdIssueNumber --repo 4-10/Nexa-ProductPipeline --reason "not planned" --comment "Closed during Product Pipeline output rollback: Project item creation failed before this issue was ready for the board."
+```
+
+Expected: the issue is closed as not planned and no Project item exists.
+
+### Project Item Created But Field Update Fails
+
+Condition: `$itemId` exists, but one or more required field updates failed or cannot be verified.
+
+Recovery after Richard confirms cleanup:
+
+```powershell
+gh project item-delete 4 --owner 4-10 --id $itemId
+gh issue close $createdIssueNumber --repo 4-10/Nexa-ProductPipeline --reason "not planned" --comment "Closed during Product Pipeline output rollback: required Project fields could not be set or verified."
+```
+
+Expected: the Project item is removed and the issue is closed as not planned.
+
+### Wrong Labels, Fields, Or Body Discovered After Creation
+
+Condition: the issue or Project item exists, but the title, body, labels, Work Type, Readiness Gate, or Module Boundary does not match the approved proposal.
+
+Recovery after Richard confirms whether to correct or close:
+
+- If the mismatch is small and Richard approves correction, update only the incorrect issue metadata or Project field, then rerun the specific issue and Project item verification.
+- If the mismatch changes the approved scope, remove the Project item and close the issue:
+
+```powershell
+gh project item-delete 4 --owner 4-10 --id $itemId
+gh issue close $createdIssueNumber --repo 4-10/Nexa-ProductPipeline --reason "not planned" --comment "Closed during Product Pipeline output rollback: created output did not match the approved proposal."
+```
+
+Expected: no incorrect board item remains; the mismatched issue is either corrected and verified or closed.
+
+### Duplicate Discovered After Creation
+
+Condition: a matching issue is discovered after `$createdIssueUrl` was created.
+
+Recovery after Richard confirms the duplicate target:
+
+```powershell
+gh project item-delete 4 --owner 4-10 --id $itemId
+gh issue close $createdIssueNumber --repo 4-10/Nexa-ProductPipeline --reason "duplicate" --duplicate-of $existingIssueNumber --comment "Closed during Product Pipeline output rollback: duplicate discovered after creation."
+```
+
+Expected: the duplicate issue is closed as a duplicate and its Project item is removed.

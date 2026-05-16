@@ -4,7 +4,7 @@ Append meaningful changes in reverse chronological order.
 
 ## 2026-05-16 - Add review-gated GitHub output procedure
 
-**What:** Added and clarified the procedure for turning approved Product Pipeline proposals into GitHub issues and Project items, including a body-file preparation step, an approved dogfood candidate example, exact-title duplicate checks, and concrete Projects v2 field id and option id commands.
+**What:** Added and clarified the procedure for turning approved Product Pipeline proposals into GitHub issues and Project items, including a body-file preparation step, an approved dogfood candidate example, exact-title duplicate checks, concrete Projects v2 field id and option id commands, and rollback/recovery conditions for partial GitHub output.
 
 **Why:** Live board mutations need a repeatable approval and verification path.
 
