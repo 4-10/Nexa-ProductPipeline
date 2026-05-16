@@ -36,6 +36,10 @@ Nexa-ProductPipeline/
 |       |-- OPEN-DEFECTS.md
 |       |-- STATE-SNAPSHOT.md
 |       `-- how-to/
+|-- product-pipeline/
+|   |-- templates/
+|   |-- workflows/
+|   `-- checklists/
 |-- _templates/
 `-- _meta/
 ```
