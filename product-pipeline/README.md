@@ -26,10 +26,10 @@ Product Pipeline v0 does not own:
 ## Layout
 
 - `templates/` - reusable artifact templates.
+- `workflows/` - operating instructions for running Product Pipeline.
+- `checklists/` - readiness and dependency gates.
 
 Planned folders for later Product Pipeline v0 slices:
 
-- `workflows/` - operating instructions for running Product Pipeline.
-- `checklists/` - readiness and dependency gates.
 - `proposals/` - reviewable output proposals before GitHub creation.
 - `how-to/` - repeatable procedures for using outputs.
