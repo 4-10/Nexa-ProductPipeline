@@ -34,13 +34,56 @@ Before any mutation, compare the approved proposal against the current repo and 
 
 Stop if any item is missing or ambiguous.
 
+## Prepare The Issue Body File
+
+After approval, create the issue body file from the approved proposal item. This example uses the approved dogfood proposal candidate `Create Product Pipeline workflow skill source`, which is marked `Create now: Yes`, `Work Type: Story`, `Readiness Gate: Draft Ready`, and `Module Boundary: Product Pipeline`.
+
+```powershell
+$issueTitle = "Create Product Pipeline workflow skill source"
+$issueBodyDir = ".\product-pipeline\proposals\issue-bodies"
+$issueBodyFile = Join-Path $issueBodyDir "create-product-pipeline-workflow-skill-source.md"
+
+New-Item -ItemType Directory -Force -Path $issueBodyDir
+
+@'
+## Goal
+
+Convert the Product Pipeline v0 workflow into a repo-owned skill source that future sessions can invoke.
+
+## Non-goals
+
+- Do not install the skill globally until the dogfood pass is reviewed.
+- Do not create GitHub output without Richard's approval checkpoint.
+
+## Acceptance criteria
+
+- Skill source exists under a repo-owned skills path.
+- Skill points to templates, gates, and proposal workflow.
+- Skill includes parent KB writeback rules.
+- Skill includes the review checkpoint before GitHub creation.
+
+## Verification
+
+- Skill file exists.
+- Routing docs mention it.
+- Placeholder scan passes.
+
+## Product Pipeline fields
+
+- Work Type: Story
+- Readiness Gate: Draft Ready
+- Module Boundary: Product Pipeline
+'@ | Set-Content -LiteralPath $issueBodyFile -Encoding UTF8
+```
+
+Expected: `$issueBodyFile` exists and matches the approved proposal item.
+
 ## Create One Issue
 
 Create exactly one approved issue at a time:
 
 ```powershell
-$issueTitle = "Add Product Pipeline artifact templates"
-$issueBodyFile = ".\product-pipeline\proposals\issue-bodies\add-product-pipeline-artifact-templates.md"
+$issueTitle = "Create Product Pipeline workflow skill source"
 
 $duplicates = gh issue list --repo 4-10/Nexa-ProductPipeline --state open --search "`"$issueTitle`" in:title" --json number,title,url |
     ConvertFrom-Json |
@@ -98,7 +141,7 @@ Capture the single-select option ids that match the approved proposal. Example v
 
 ```powershell
 $workTypeOptionId = (($fields.fields | Where-Object { $_.name -eq "Work Type" }).options | Where-Object { $_.name -eq "Story" }).id
-$readinessGateOptionId = (($fields.fields | Where-Object { $_.name -eq "Readiness Gate" }).options | Where-Object { $_.name -eq "Dev Ready" }).id
+$readinessGateOptionId = (($fields.fields | Where-Object { $_.name -eq "Readiness Gate" }).options | Where-Object { $_.name -eq "Draft Ready" }).id
 $moduleBoundaryOptionId = (($fields.fields | Where-Object { $_.name -eq "Module Boundary" }).options | Where-Object { $_.name -eq "Product Pipeline" }).id
 ```
 
