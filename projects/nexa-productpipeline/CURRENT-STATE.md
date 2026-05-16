@@ -1,33 +1,27 @@
 # Nexa Product Pipeline - CURRENT STATE
 
 **Last updated:** 2026-05-16
-**Updated by:** Codex session (KB initialization)
+**Updated by:** Codex session (v0 design draft)
 
 ## Active Focus
 
 The Nexa Product Pipeline repository has been cloned and initialized with a sanitized working KB based on the Project-X KB pattern. A repo-linked GitHub Project has been created for module work tracking.
 
-The immediate focus is ideation and design for the Product Pipeline module: how it should intake human guidance, run research, synthesize product direction, create epics/tasks, collaborate with design, and feed Nexa's project boards with ready work.
+The immediate focus is reviewing the v0 Product Pipeline design draft before creating the first issue candidates. The draft recommends a workflow/skill-first module that produces intake notes, research brief, comparative analysis, opportunity brief, epic map, issue candidates, readiness gates, parent KB update instructions, and a lightweight design handoff gate.
 
 ## Last Action Taken
 
-Created the local working repo at `C:/Projects/Nexa-ProductPipeline`, copied and sanitized the Project-X KB structure, registered Product Pipeline-specific reference docs, created issue templates and initial labels, and created the GitHub Project `Nexa Product Pipeline` at `https://github.com/users/4-10/projects/4`.
+Drafted `docs/superpowers/specs/2026-05-16-product-pipeline-v0-design.md` as the first v0 module design checkpoint.
 
 ## Next Intended Move
 
-Begin the module design conversation and decide the first v0 boundary:
-
-- Product Pipeline only, with design as a later collaborating module.
-- Product Pipeline with a lightweight design-brief handoff built in.
-- Product Pipeline plus first GitHub Project automation slice.
+Richard should review the v0 design draft. After approval, create the first 5 to 8 GitHub issue candidates for the Product Pipeline board and then decide which slice to implement first.
 
 ## Open Decisions
 
-- Does v0 Product Pipeline stop at epics, or does it also generate stories/tasks?
-- Should the design layer be separate, embedded as a lightweight brief, or represented as a collaboration gate?
-- Which artifact is mandatory first: research brief, opportunity brief, epic map, behavior contract, release slice, or ready-for-dev issue?
-- Should v0 ship as a Codex skill, prompt pack, script bundle, CLI, service, or Nexa module contract?
-- Which parent KB paths should the final module update after a run?
+- Should v0 issue creation require explicit approval every time, or can trusted runs auto-create research spikes?
+- Should Product Pipeline use the existing Nexa safe-task claim protocol immediately, or wait until implementation work starts?
+- Should the first module artifact live as a Codex skill under this repo, a Nexa-AOS skill, or both during development?
 
 ## State Health
 
@@ -44,6 +38,7 @@ Begin the module design conversation and decide the first v0 boundary:
 - `C:/Projects/Nexa-ProductPipeline` - local working repo.
 - `https://github.com/4-10/Nexa-ProductPipeline` - GitHub repository.
 - `https://github.com/users/4-10/projects/4` - repo-linked GitHub Project.
+- `docs/superpowers/specs/2026-05-16-product-pipeline-v0-design.md` - v0 design draft awaiting Richard review.
 - `.github/ISSUE_TEMPLATE/` - initial research spike, feature/story, and defect issue forms.
 - GitHub labels - initial type, area, and claim labels for module work.
 - `shared/reference/architecture.md` - first module-boundary reference.

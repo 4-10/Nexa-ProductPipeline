@@ -14,6 +14,7 @@ Master keyword to path lookup. When you need information about a topic, search t
 ## Product Pipeline Reference
 
 - **architecture, module boundary, parent KB, AppGenerator handoff, GitHub integration** -> [shared/reference/architecture.md](shared/reference/architecture.md)
+- **v0 design, workflow, artifact ladder, readiness gates, module spec** -> [docs/superpowers/specs/2026-05-16-product-pipeline-v0-design.md](docs/superpowers/specs/2026-05-16-product-pipeline-v0-design.md)
 - **product strategy, why this module exists, velocity, backlog drought, product operating layer** -> [shared/reference/product-strategy.md](shared/reference/product-strategy.md)
 - **research, discovery, market study, target segment, comparative analysis, evidence** -> [shared/reference/research-discovery.md](shared/reference/research-discovery.md)
 - **intake, human guidance, agile questioning, epics, stories, tasks, artifact ladder** -> [shared/reference/intake-to-artifacts.md](shared/reference/intake-to-artifacts.md)

@@ -2,6 +2,28 @@
 
 Record durable decisions in reverse chronological order.
 
+## 2026-05-16 - Start Product Pipeline v0 as a workflow/skill, not an app or service
+
+**Tags:** architecture, module-boundary, product-strategy, v0-design
+
+**Context:** Richard asked for the most efficient path to proceed. Product Pipeline ultimately may automate GitHub Project updates and integrate deeply with Nexa, but the riskiest unknown is the quality of the product artifact flow, not the mechanics of writing issues.
+
+**Options considered:**
+
+- A: Build a full app or service first.
+- B: Build GitHub automation first.
+- C: Build a Codex-compatible workflow/skill with Markdown artifact templates first.
+
+**Decision:** Choose C.
+
+**Why:** A workflow/skill can be dogfooded immediately, proves the artifact ladder before automation, and avoids creating backlog sludge faster than the product reasoning improves.
+
+**Consequences:**
+
+- The first implementation slices should create templates and workflow instructions.
+- GitHub issue/project creation should come after the issue proposal format is proven.
+- The first manual test should use Product Pipeline to generate its own first 5 to 8 issue candidates.
+
 ## 2026-05-16 - Use a temporary module-build KB, not a final runtime KB
 
 **Tags:** architecture, parent-kb-integration, module-boundary

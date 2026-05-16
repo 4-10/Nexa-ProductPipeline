@@ -2,6 +2,16 @@
 
 Append meaningful changes in reverse chronological order.
 
+## 2026-05-16 - Draft Product Pipeline v0 design spec
+
+**What:** Added the first Product Pipeline v0 design draft covering workflow/skill-first module shape, artifact ladder, readiness gates, design collaboration, parent KB integration, GitHub output rules, and first implementation slices.
+
+**Why:** Richard approved proceeding with the efficient path recommendation, and the module needs a reviewable design checkpoint before implementation planning or issue generation.
+
+**Files:** `docs/superpowers/specs/2026-05-16-product-pipeline-v0-design.md`, `INDEX.md`, `projects/nexa-productpipeline/CURRENT-STATE.md`, `projects/nexa-productpipeline/DECISION-LOG.md`, `projects/nexa-productpipeline/AUDIT-LOG.md`.
+
+**Verification:** Placeholder scan found no unresolved placeholders in the design files; `git diff --check` passed; all local Markdown links resolve.
+
 ## 2026-05-16 - Initialize Product Pipeline working KB and GitHub Project
 
 **What:** Cloned `https://github.com/4-10/Nexa-ProductPipeline`, copied the Project-X KB scaffold into the repo, sanitized it for Nexa Product Pipeline, added initial issue templates and labels, and created a repo-linked GitHub Project at `https://github.com/users/4-10/projects/4`.
