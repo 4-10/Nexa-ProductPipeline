@@ -178,7 +178,7 @@ Use Product Pipeline v0 on Product Pipeline itself to produce the first issue pr
 **Readiness Gate:** Spec
 **Module Boundary:** GitHub Project
 **Labels:** `type:story`, `area:github-project`
-**Create now:** No; should wait until the manual GitHub output procedure is reviewed.
+**Create now:** No; should wait until the manual GitHub output flow is proven.
 
 **Goal:** Add a small script or documented command wrapper to create approved issues and assign Project fields.
 
