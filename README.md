@@ -39,7 +39,9 @@ Nexa-ProductPipeline/
 |-- product-pipeline/
 |   |-- templates/
 |   |-- workflows/
-|   `-- checklists/
+|   |-- checklists/
+|   |-- proposals/
+|   `-- how-to/
 |-- _templates/
 `-- _meta/
 ```

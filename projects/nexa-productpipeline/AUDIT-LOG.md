@@ -4,13 +4,13 @@ Append meaningful changes in reverse chronological order.
 
 ## 2026-05-16 - Add review-gated GitHub output procedure
 
-**What:** Added the procedure for turning approved Product Pipeline proposals into GitHub issues and Project items.
+**What:** Added and clarified the procedure for turning approved Product Pipeline proposals into GitHub issues and Project items, including exact-title duplicate checks and concrete Projects v2 field id and option id commands.
 
 **Why:** Live board mutations need a repeatable approval and verification path.
 
-**Files:** `product-pipeline/how-to/create-github-output-from-proposal.md`, `INDEX.md`.
+**Files:** `product-pipeline/how-to/create-github-output-from-proposal.md`, `INDEX.md`, `README.md`, `product-pipeline/README.md`.
 
-**Verification:** Placeholder scan over the how-to and index passed; `git diff --check` passed; `gh project view 4 --owner 4-10` succeeded.
+**Verification:** Placeholder scan over the how-to, READMEs, index, and audit log passed; `git diff --check` passed; local Markdown links resolved; `gh project item-edit --help` and `gh project field-list 4 --owner 4-10 --format json` confirmed Projects v2 field syntax and option ids; `gh project view 4 --owner 4-10` succeeded; issue and Project item lists confirmed no issues/items were created.
 
 ## 2026-05-16 - Create Product Pipeline self-dogfood issue proposal
 
