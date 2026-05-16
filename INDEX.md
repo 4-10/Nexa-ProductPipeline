@@ -56,6 +56,7 @@ Master keyword to path lookup. When you need information about a topic, search t
 
 - **session start, catchup, first files to read, verification** -> [projects/nexa-productpipeline/how-to/session-start.md](projects/nexa-productpipeline/how-to/session-start.md)
 - **backlog, roadmap, epics, stories, tasks, GitHub issues, ready-for-dev gate** -> [projects/nexa-productpipeline/how-to/backlog-and-feature-slicing.md](projects/nexa-productpipeline/how-to/backlog-and-feature-slicing.md)
+- **create GitHub output, approved proposal, issue creation, project fields** -> [product-pipeline/how-to/create-github-output-from-proposal.md](product-pipeline/how-to/create-github-output-from-proposal.md)
 
 ## External / Non-Managed References
 

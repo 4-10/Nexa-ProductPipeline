@@ -2,6 +2,16 @@
 
 Append meaningful changes in reverse chronological order.
 
+## 2026-05-16 - Add review-gated GitHub output procedure
+
+**What:** Added the procedure for turning approved Product Pipeline proposals into GitHub issues and Project items.
+
+**Why:** Live board mutations need a repeatable approval and verification path.
+
+**Files:** `product-pipeline/how-to/create-github-output-from-proposal.md`, `INDEX.md`.
+
+**Verification:** Placeholder scan over the how-to and index passed; `git diff --check` passed; `gh project view 4 --owner 4-10` succeeded.
+
 ## 2026-05-16 - Create Product Pipeline self-dogfood issue proposal
 
 **What:** Used the v0 design and workflow to draft the first Product Pipeline issue proposal without creating GitHub issues yet.
