@@ -2,6 +2,16 @@
 
 Append meaningful changes in reverse chronological order.
 
+## 2026-05-16 - Verify Product Pipeline v0 workflow artifacts
+
+**What:** Ran final verification over the v0 artifact templates, workflow, gates, proposal, and GitHub output procedure.
+
+**Why:** The workflow artifacts need to be clean before issue creation or implementation work continues.
+
+**Files:** `product-pipeline/*`, `INDEX.md`, `projects/nexa-productpipeline/CURRENT-STATE.md`, `projects/nexa-productpipeline/AUDIT-LOG.md`.
+
+**Verification:** Full placeholder scan over `product-pipeline`, `docs/superpowers/plans`, `INDEX.md`, and `projects/nexa-productpipeline` returned no unresolved placeholder patterns; `git diff --check` passed; `gh project view 4 --owner 4-10` succeeded and reported item count 0; `gh issue list --repo 4-10/Nexa-ProductPipeline --state all --limit 100` returned no issues. No GitHub issues or Project items were created; the direct `gh project item-list 4 --owner 4-10 --limit 100` read-only check was attempted but blocked by the GitHub GraphQL rate limit.
+
 ## 2026-05-16 - Add review-gated GitHub output procedure
 
 **What:** Added and clarified the procedure for turning approved Product Pipeline proposals into GitHub issues and Project items, including a body-file preparation step, an approved dogfood candidate example, exact-title duplicate checks, concrete Projects v2 field id and option id commands, and rollback/recovery conditions for partial GitHub output.

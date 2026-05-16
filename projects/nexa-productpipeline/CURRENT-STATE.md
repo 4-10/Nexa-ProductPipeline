@@ -1,21 +1,21 @@
 # Nexa Product Pipeline - CURRENT STATE
 
 **Last updated:** 2026-05-16
-**Updated by:** Codex session (self-dogfood issue proposal)
+**Updated by:** Codex session (final v0 artifact verification)
 
 ## Active Focus
 
 The Nexa Product Pipeline repository has been cloned and initialized with a sanitized working KB based on the Project-X KB pattern. A repo-linked GitHub Project has been created for module work tracking.
 
-The active focus is reviewing the Product Pipeline self-dogfood issue proposal. The proposal uses the v0 workflow on Product Pipeline itself and keeps GitHub issue creation gated on Richard approval.
+The active focus is that the Product Pipeline v0 artifact workflow and issue proposal are ready for Richard review. The proposal uses the v0 workflow on Product Pipeline itself and keeps GitHub issue creation gated on Richard approval.
 
 ## Last Action Taken
 
-Created `product-pipeline/proposals/2026-05-16-self-dogfood-issue-proposal.md`.
+Created the Product Pipeline v0 templates, workflow, readiness gates, self-dogfood issue proposal, and review-gated GitHub output procedure.
 
 ## Next Intended Move
 
-Richard approves which proposed issues to create after the current plan completes.
+Richard approves issue creation from the proposal or selects the first implementation issue.
 
 ## Open Decisions
 
@@ -40,7 +40,13 @@ Richard approves which proposed issues to create after the current plan complete
 - `https://github.com/users/4-10/projects/4` - repo-linked GitHub Project.
 - `docs/superpowers/specs/2026-05-16-product-pipeline-v0-design.md` - v0 design draft awaiting Richard review.
 - `docs/superpowers/plans/2026-05-16-product-pipeline-v0-implementation.md` - implementation plan for v0 workflow artifacts.
+- `product-pipeline/` - v0 Product Pipeline artifact workspace.
+- `product-pipeline/templates/` - intake, research, comparison, opportunity, design, epic, issue, and parent-KB update templates.
+- `product-pipeline/workflows/product-pipeline-v0.md` - end-to-end v0 artifact workflow.
+- `product-pipeline/checklists/readiness-gate.md` - ready-for-GitHub issue gate.
+- `product-pipeline/checklists/design-needed-gate.md` - design-collaboration routing gate.
 - `product-pipeline/proposals/2026-05-16-self-dogfood-issue-proposal.md` - self-dogfood proposal for the first Product Pipeline issue candidates.
+- `product-pipeline/how-to/create-github-output-from-proposal.md` - review-gated procedure for creating approved GitHub issues and Project items.
 - `.github/ISSUE_TEMPLATE/` - initial research spike, feature/story, and defect issue forms.
 - GitHub labels - initial type, area, and claim labels for module work.
 - `shared/reference/architecture.md` - first module-boundary reference.
