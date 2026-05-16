@@ -2,6 +2,16 @@
 
 Append meaningful changes in reverse chronological order.
 
+## 2026-05-16 - Add Product Pipeline artifact templates
+
+**What:** Added the first Product Pipeline v0 artifact template set and routed the templates from `INDEX.md`.
+
+**Why:** The workflow needs concrete artifacts before GitHub automation can safely create issues.
+
+**Files:** `product-pipeline/README.md`, `product-pipeline/templates/*`, `INDEX.md`.
+
+**Verification:** `rg -n 'T[B]D|T[O]DO|\{\{|\}\}' product-pipeline INDEX.md` returned no unresolved template placeholders; `git diff --check` passed.
+
 ## 2026-05-16 - Draft Product Pipeline v0 implementation plan
 
 **What:** Added a task-by-task implementation plan for creating Product Pipeline v0 artifact templates, workflow instructions, readiness gates, a self-dogfood issue proposal, and a review-gated GitHub output procedure.
