@@ -5,6 +5,10 @@ desktop.ini
 *.tmp
 *.log
 
+# Local implementation worktrees
+.worktrees/
+worktrees/
+
 # Never store local credentials or environment files in the KB
 .env
 .env.*
