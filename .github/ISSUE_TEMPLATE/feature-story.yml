@@ -1,0 +1,53 @@
+name: Feature Or Story
+description: Create a bounded Product Pipeline behavior or artifact.
+title: "[Story] "
+labels: ["type:story", "area:product"]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What should exist or work after this issue?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: What product artifact, decision, or parent KB fact motivates this work?
+    validations:
+      required: true
+  - type: textarea
+    id: non_goals
+    attributes:
+      label: Non-goals
+      description: What is explicitly out of scope?
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: What must be true for this to be done?
+      placeholder: Use checkboxes when helpful.
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: Verification plan
+      description: Commands, inspections, GitHub state, or review steps required.
+    validations:
+      required: true
+  - type: textarea
+    id: kb_updates
+    attributes:
+      label: KB updates expected
+      description: Which KB files should change?
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies or blockers
+      description: Research, design, parent KB, AppGenerator, or GitHub Project dependencies.

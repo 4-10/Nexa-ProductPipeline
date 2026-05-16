@@ -1,0 +1,11 @@
+# Local operating-system/editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.log
+
+# Never store local credentials or environment files in the KB
+.env
+.env.*
+!.env.example

@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Nexa Product Pipeline KB
+    url: https://github.com/4-10/Nexa-ProductPipeline
+    about: Read the working KB before opening broad module-design work.

@@ -1,0 +1,48 @@
+name: Research Spike
+description: Answer an unknown before Product Pipeline creates build-ready work.
+title: "[Spike] "
+labels: ["type:spike", "area:product"]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What question should this spike answer?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: What product idea, parent KB fact, or module decision created this question?
+    validations:
+      required: true
+  - type: textarea
+    id: non_goals
+    attributes:
+      label: Non-goals
+      description: What should this spike avoid doing?
+    validations:
+      required: true
+  - type: textarea
+    id: expected_output
+    attributes:
+      label: Expected output
+      description: What artifact should exist when this is complete?
+      placeholder: Research brief, comparison, recommendation, decision entry, or follow-up issue list.
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: Verification plan
+      description: How will we know the spike produced usable evidence?
+    validations:
+      required: true
+  - type: textarea
+    id: kb_updates
+    attributes:
+      label: KB updates expected
+      description: Which KB files should be updated if the spike changes durable knowledge?
+    validations:
+      required: true

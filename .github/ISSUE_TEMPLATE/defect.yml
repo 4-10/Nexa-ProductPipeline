@@ -1,0 +1,38 @@
+name: Defect
+description: Report stale KB state, broken process, or incorrect module behavior.
+title: "[Defect] "
+labels: ["type:defect"]
+body:
+  - type: textarea
+    id: symptom
+    attributes:
+      label: Symptom
+      description: What is wrong or misleading?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should happen instead?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Links, commands, screenshots, files, or GitHub state that prove the issue.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Likely scope
+      description: Files, docs, GitHub Project fields, or module behavior likely affected.
+  - type: textarea
+    id: verification
+    attributes:
+      label: Verification plan
+      description: How should the fix be checked?
+    validations:
+      required: true
