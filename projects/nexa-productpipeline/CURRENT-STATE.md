@@ -1,21 +1,21 @@
 # Nexa Product Pipeline - CURRENT STATE
 
 **Last updated:** 2026-05-16
-**Updated by:** Codex session (v0 implementation plan)
+**Updated by:** Codex session (self-dogfood issue proposal)
 
 ## Active Focus
 
 The Nexa Product Pipeline repository has been cloned and initialized with a sanitized working KB based on the Project-X KB pattern. A repo-linked GitHub Project has been created for module work tracking.
 
-The immediate focus is reviewing and executing the Product Pipeline v0 implementation plan. The plan breaks the approved design into artifact templates, workflow instructions, readiness gates, a self-dogfood issue proposal, a review-gated GitHub output procedure, and final verification.
+The active focus is reviewing the Product Pipeline self-dogfood issue proposal. The proposal uses the v0 workflow on Product Pipeline itself and keeps GitHub issue creation gated on Richard approval.
 
 ## Last Action Taken
 
-Drafted `docs/superpowers/plans/2026-05-16-product-pipeline-v0-implementation.md` from the approved v0 design.
+Created `product-pipeline/proposals/2026-05-16-self-dogfood-issue-proposal.md`.
 
 ## Next Intended Move
 
-Choose execution mode for the implementation plan. Recommended path is subagent-driven execution, one task at a time, with review between tasks.
+Richard approves which proposed issues to create after the current plan completes.
 
 ## Open Decisions
 
@@ -40,6 +40,7 @@ Choose execution mode for the implementation plan. Recommended path is subagent-
 - `https://github.com/users/4-10/projects/4` - repo-linked GitHub Project.
 - `docs/superpowers/specs/2026-05-16-product-pipeline-v0-design.md` - v0 design draft awaiting Richard review.
 - `docs/superpowers/plans/2026-05-16-product-pipeline-v0-implementation.md` - implementation plan for v0 workflow artifacts.
+- `product-pipeline/proposals/2026-05-16-self-dogfood-issue-proposal.md` - self-dogfood proposal for the first Product Pipeline issue candidates.
 - `.github/ISSUE_TEMPLATE/` - initial research spike, feature/story, and defect issue forms.
 - GitHub labels - initial type, area, and claim labels for module work.
 - `shared/reference/architecture.md` - first module-boundary reference.

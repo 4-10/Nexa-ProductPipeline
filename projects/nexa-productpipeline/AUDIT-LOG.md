@@ -2,6 +2,16 @@
 
 Append meaningful changes in reverse chronological order.
 
+## 2026-05-16 - Create Product Pipeline self-dogfood issue proposal
+
+**What:** Used the v0 design and workflow to draft the first Product Pipeline issue proposal without creating GitHub issues yet.
+
+**Why:** The workflow should prove its artifact quality before mutating the live board.
+
+**Files:** `product-pipeline/proposals/2026-05-16-self-dogfood-issue-proposal.md`, `INDEX.md`, `projects/nexa-productpipeline/CURRENT-STATE.md`.
+
+**Verification:** Placeholder scan over proposal and current-state files returned no unresolved placeholders; `git diff --check` passed.
+
 ## 2026-05-16 - Add Product Pipeline workflow and gates
 
 **What:** Added the v0 workflow plus readiness and design-needed gates.

@@ -28,6 +28,7 @@ Master keyword to path lookup. When you need information about a topic, search t
 - **parent KB update plan template, audit, decision, current state writeback** -> [product-pipeline/templates/parent-kb-update-plan.md](product-pipeline/templates/parent-kb-update-plan.md)
 - **v0 design, workflow, artifact ladder, readiness gates, module spec** -> [docs/superpowers/specs/2026-05-16-product-pipeline-v0-design.md](docs/superpowers/specs/2026-05-16-product-pipeline-v0-design.md)
 - **v0 implementation plan, templates, workflow, gates, dogfood proposal** -> [docs/superpowers/plans/2026-05-16-product-pipeline-v0-implementation.md](docs/superpowers/plans/2026-05-16-product-pipeline-v0-implementation.md)
+- **self dogfood issue proposal, first issues, proposed backlog** -> [product-pipeline/proposals/2026-05-16-self-dogfood-issue-proposal.md](product-pipeline/proposals/2026-05-16-self-dogfood-issue-proposal.md)
 - **product strategy, why this module exists, velocity, backlog drought, product operating layer** -> [shared/reference/product-strategy.md](shared/reference/product-strategy.md)
 - **research, discovery, market study, target segment, comparative analysis, evidence** -> [shared/reference/research-discovery.md](shared/reference/research-discovery.md)
 - **intake, human guidance, agile questioning, epics, stories, tasks, artifact ladder** -> [shared/reference/intake-to-artifacts.md](shared/reference/intake-to-artifacts.md)
