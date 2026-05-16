@@ -15,6 +15,9 @@ Master keyword to path lookup. When you need information about a topic, search t
 
 - **architecture, module boundary, parent KB, AppGenerator handoff, GitHub integration** -> [shared/reference/architecture.md](shared/reference/architecture.md)
 - **module artifacts, product pipeline templates, intake notes, research brief, opportunity brief** -> [product-pipeline/README.md](product-pipeline/README.md)
+- **product pipeline v0 workflow, run product pipeline, product idea to backlog** -> [product-pipeline/workflows/product-pipeline-v0.md](product-pipeline/workflows/product-pipeline-v0.md)
+- **readiness gate, dev ready, draft ready, blocked, issue candidate quality** -> [product-pipeline/checklists/readiness-gate.md](product-pipeline/checklists/readiness-gate.md)
+- **design-needed gate, design handoff, visual direction blocker** -> [product-pipeline/checklists/design-needed-gate.md](product-pipeline/checklists/design-needed-gate.md)
 - **intake notes template, human guidance capture** -> [product-pipeline/templates/intake-notes.md](product-pipeline/templates/intake-notes.md)
 - **research brief template, evidence capture, research questions** -> [product-pipeline/templates/research-brief.md](product-pipeline/templates/research-brief.md)
 - **comparative analysis template, alternatives, differentiators** -> [product-pipeline/templates/comparative-analysis.md](product-pipeline/templates/comparative-analysis.md)

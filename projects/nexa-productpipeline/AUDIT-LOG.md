@@ -2,6 +2,16 @@
 
 Append meaningful changes in reverse chronological order.
 
+## 2026-05-16 - Add Product Pipeline workflow and gates
+
+**What:** Added the v0 workflow plus readiness and design-needed gates.
+
+**Why:** The module needs clear operating rules before dogfooding issue generation.
+
+**Files:** `product-pipeline/workflows/product-pipeline-v0.md`, `product-pipeline/checklists/*`, `INDEX.md`.
+
+**Verification:** Placeholder scan over workflow and gate files returned no unresolved placeholders; `git diff --check` passed.
+
 ## 2026-05-16 - Add Product Pipeline artifact templates
 
 **What:** Added the first Product Pipeline v0 artifact template set and routed the templates from `INDEX.md`.
