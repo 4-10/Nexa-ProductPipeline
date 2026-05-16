@@ -2,6 +2,16 @@
 
 Append meaningful changes in reverse chronological order.
 
+## 2026-05-16 - Draft Product Pipeline v0 implementation plan
+
+**What:** Added a task-by-task implementation plan for creating Product Pipeline v0 artifact templates, workflow instructions, readiness gates, a self-dogfood issue proposal, and a review-gated GitHub output procedure.
+
+**Why:** Richard approved proceeding from the v0 design, and the next step is a concrete execution plan before module implementation.
+
+**Files:** `docs/superpowers/plans/2026-05-16-product-pipeline-v0-implementation.md`, `INDEX.md`, `projects/nexa-productpipeline/CURRENT-STATE.md`, `projects/nexa-productpipeline/AUDIT-LOG.md`.
+
+**Verification:** Plan placeholder scan found no unresolved placeholder patterns; `git diff --check` passed; all local Markdown links resolve.
+
 ## 2026-05-16 - Draft Product Pipeline v0 design spec
 
 **What:** Added the first Product Pipeline v0 design draft covering workflow/skill-first module shape, artifact ladder, readiness gates, design collaboration, parent KB integration, GitHub output rules, and first implementation slices.

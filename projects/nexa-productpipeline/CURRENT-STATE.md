@@ -1,21 +1,21 @@
 # Nexa Product Pipeline - CURRENT STATE
 
 **Last updated:** 2026-05-16
-**Updated by:** Codex session (v0 design draft)
+**Updated by:** Codex session (v0 implementation plan)
 
 ## Active Focus
 
 The Nexa Product Pipeline repository has been cloned and initialized with a sanitized working KB based on the Project-X KB pattern. A repo-linked GitHub Project has been created for module work tracking.
 
-The immediate focus is reviewing the v0 Product Pipeline design draft before creating the first issue candidates. The draft recommends a workflow/skill-first module that produces intake notes, research brief, comparative analysis, opportunity brief, epic map, issue candidates, readiness gates, parent KB update instructions, and a lightweight design handoff gate.
+The immediate focus is reviewing and executing the Product Pipeline v0 implementation plan. The plan breaks the approved design into artifact templates, workflow instructions, readiness gates, a self-dogfood issue proposal, a review-gated GitHub output procedure, and final verification.
 
 ## Last Action Taken
 
-Drafted `docs/superpowers/specs/2026-05-16-product-pipeline-v0-design.md` as the first v0 module design checkpoint.
+Drafted `docs/superpowers/plans/2026-05-16-product-pipeline-v0-implementation.md` from the approved v0 design.
 
 ## Next Intended Move
 
-Richard should review the v0 design draft. After approval, create the first 5 to 8 GitHub issue candidates for the Product Pipeline board and then decide which slice to implement first.
+Choose execution mode for the implementation plan. Recommended path is subagent-driven execution, one task at a time, with review between tasks.
 
 ## Open Decisions
 
@@ -39,6 +39,7 @@ Richard should review the v0 design draft. After approval, create the first 5 to
 - `https://github.com/4-10/Nexa-ProductPipeline` - GitHub repository.
 - `https://github.com/users/4-10/projects/4` - repo-linked GitHub Project.
 - `docs/superpowers/specs/2026-05-16-product-pipeline-v0-design.md` - v0 design draft awaiting Richard review.
+- `docs/superpowers/plans/2026-05-16-product-pipeline-v0-implementation.md` - implementation plan for v0 workflow artifacts.
 - `.github/ISSUE_TEMPLATE/` - initial research spike, feature/story, and defect issue forms.
 - GitHub labels - initial type, area, and claim labels for module work.
 - `shared/reference/architecture.md` - first module-boundary reference.
