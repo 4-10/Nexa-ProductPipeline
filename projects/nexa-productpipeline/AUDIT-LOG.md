@@ -2,6 +2,16 @@
 
 Append meaningful changes in reverse chronological order.
 
+## 2026-05-18 - Accept Product Pipeline v0 baseline
+
+**What:** Added the Overwatch `#4` activation review and accepted Product Pipeline v0 as the baseline artifact workflow for the next cross-module integration step.
+
+**Why:** AppBuilder foundation work is complete enough that NoderaOS needs the upstream product artifact shape accepted before the Product Pipeline -> KB Core -> AppBuilder contract can be finalized.
+
+**Files:** `product-pipeline/reviews/2026-05-18-v0-activation-review.md`, `INDEX.md`, `projects/nexa-productpipeline/CURRENT-STATE.md`, `projects/nexa-productpipeline/AUDIT-LOG.md`.
+
+**Verification:** Placeholder scan returned no unresolved patterns; Markdown link check passed; `git diff --check` passed; `gh project view 4 --owner 4-10 --format json` confirmed Project `#4`; `gh issue list --repo 4-10/Nexa-ProductPipeline --state all --limit 100 --json number,title,state,url` returned no issues; `gh project item-list 4 --owner 4-10 --limit 100 --format json` returned zero items.
+
 ## 2026-05-16 - Verify Product Pipeline v0 workflow artifacts
 
 **What:** Ran final verification over the v0 artifact templates, workflow, gates, proposal, and GitHub output procedure.

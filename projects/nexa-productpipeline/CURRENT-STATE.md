@@ -1,21 +1,21 @@
 # Nexa Product Pipeline - CURRENT STATE
 
-**Last updated:** 2026-05-16
-**Updated by:** Codex session (final v0 artifact verification)
+**Last updated:** 2026-05-18
+**Updated by:** Codex Overwatch session (v0 activation review)
 
 ## Active Focus
 
 The Nexa Product Pipeline repository has been cloned and initialized with a sanitized working KB based on the Project-X KB pattern. A repo-linked GitHub Project has been created for module work tracking.
 
-The active focus is that the Product Pipeline v0 artifact workflow and issue proposal are ready for Richard review. The proposal uses the v0 workflow on Product Pipeline itself and keeps GitHub issue creation gated on Richard approval.
+The active focus is that Product Pipeline v0 has been accepted as the baseline workflow artifact set for the next NoderaOS integration step. The workflow remains review-gated: no GitHub issues or Project items are created until Richard approves exact candidates or a later policy narrows a trusted auto-create path.
 
 ## Last Action Taken
 
-Created the Product Pipeline v0 templates, workflow, readiness gates, self-dogfood issue proposal, and review-gated GitHub output procedure.
+Reviewed and accepted the Product Pipeline v0 templates, workflow, readiness gates, self-dogfood issue proposal, and review-gated GitHub output procedure as the baseline input for Overwatch `#6`.
 
 ## Next Intended Move
 
-Richard approves issue creation from the proposal or selects the first implementation issue.
+Use Overwatch `#6` to define the cross-module Product Pipeline -> KB Core -> AppBuilder handoff contract. Candidate issue creation from the self-dogfood proposal remains deferred until exact candidate approval.
 
 ## Open Decisions
 
@@ -47,6 +47,7 @@ Richard approves issue creation from the proposal or selects the first implement
 - `product-pipeline/checklists/design-needed-gate.md` - design-collaboration routing gate.
 - `product-pipeline/proposals/2026-05-16-self-dogfood-issue-proposal.md` - self-dogfood proposal for the first Product Pipeline issue candidates.
 - `product-pipeline/how-to/create-github-output-from-proposal.md` - review-gated procedure for creating approved GitHub issues and Project items.
+- `product-pipeline/reviews/2026-05-18-v0-activation-review.md` - Overwatch `#4` activation review and accepted v0 baseline decision.
 - `.github/ISSUE_TEMPLATE/` - initial research spike, feature/story, and defect issue forms.
 - GitHub labels - initial type, area, and claim labels for module work.
 - `shared/reference/architecture.md` - first module-boundary reference.
@@ -57,7 +58,7 @@ Richard approves issue creation from the proposal or selects the first implement
 
 ## Active Testbed / Environment
 
-KB and GitHub Project only. No Product Pipeline runtime, CLI, service, skill, prompt pack, or automation artifact exists yet.
+KB and GitHub Project only. No Product Pipeline runtime, CLI, service, skill, prompt pack, or automation artifact exists yet. The accepted v0 artifact set is ready to feed the cross-module integration contract.
 
 ## Failure Modes To Watch For
 
