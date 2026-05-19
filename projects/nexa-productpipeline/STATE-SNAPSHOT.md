@@ -9,7 +9,7 @@
 | Local path | `C:/Projects/Nexa-ProductPipeline` |
 | GitHub repo | `https://github.com/4-10/Nexa-ProductPipeline` |
 | Default branch | `main` |
-| Current artifact | Working KB, task tracker, local packet-to-run generator, and accepted Launch Intake artifact review |
+| Current artifact | Working KB, task tracker, local packet-to-run generator, accepted Launch Intake artifact review, and queued managed-pilot offer validation |
 | Runtime artifact | Not chosen yet |
 | Issue templates | `.github/ISSUE_TEMPLATE/` |
 | Initial labels | `type:spike`, `type:story`, `type:defect`, `area:kb`, `area:product`, `area:github-project`, `area:design`, `status:claimed` |
@@ -23,7 +23,7 @@
 | Project URL | `https://github.com/users/4-10/projects/4` |
 | Linked repo | `4-10/Nexa-ProductPipeline` |
 | Custom fields | `Work Type`, `Readiness Gate`, `Module Boundary` |
-| Current live issue | None. `4-10/Nexa-ProductPipeline#2` is closed/Done after accepted review. |
+| Current live issue | `4-10/Nexa-ProductPipeline#3` is open/Todo for managed-pilot offer validation; `#2` is closed/Done after accepted review. |
 
 ## Reference Inputs Reviewed At Initialization
 
@@ -34,7 +34,7 @@
 
 ## Current Artifact Boundary
 
-This repo is not yet a service, app, packaged skill, or prompt package. It is a KB-backed planning and build workspace with a local PowerShell generator for converting reviewed packet drafts into Product Pipeline artifact runs. The generated Launch Intake Desk run is accepted as Draft Ready Product Pipeline output. The only live issue created from the generated proposal is `4-10/Nexa-ProductPipeline#2`.
+This repo is not yet a service, app, packaged skill, or prompt package. It is a KB-backed planning and build workspace with a local PowerShell generator for converting reviewed packet drafts into Product Pipeline artifact runs. The generated Launch Intake Desk run is accepted as Draft Ready Product Pipeline output. `4-10/Nexa-ProductPipeline#2` is closed/Done; `4-10/Nexa-ProductPipeline#3` is the open Research-gate managed-pilot offer validation item.
 
 ## Verification Commands
 

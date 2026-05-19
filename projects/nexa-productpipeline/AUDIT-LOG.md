@@ -2,6 +2,16 @@
 
 Append meaningful changes in reverse chronological order.
 
+## 2026-05-19 - Queue managed-pilot offer validation
+
+**What:** Added `product-pipeline/proposals/issue-bodies/launch-intake-managed-pilot-offer-validation.md`, created `4-10/Nexa-ProductPipeline#3`, added it to Product Pipeline Project `#4`, and set Project fields to Status `Todo`, Work Type `Research Spike`, Readiness Gate `Research`, and Module Boundary `Product Pipeline`.
+
+**Why:** Overwatch selected the managed-private-pilot and local-first/customer-workspace trust architecture as the next Launch Intake lane. Product Pipeline should validate buyer, package, objections, and pricing hypothesis before billing, public pricing, self-serve SaaS, or AppBuilder re-materialization work.
+
+**Files:** `product-pipeline/proposals/issue-bodies/launch-intake-managed-pilot-offer-validation.md`, `INDEX.md`, `projects/nexa-productpipeline/CURRENT-STATE.md`, `projects/nexa-productpipeline/STATE-SNAPSHOT.md`, `projects/nexa-productpipeline/AUDIT-LOG.md`, `projects/nexa-productpipeline/DECISION-LOG.md`.
+
+**Verification:** Packet-to-run generator self-test passed, local Markdown link check passed, placeholder scan returned no hits, `git diff --check` passed, and `gh project item-list 4 --owner 4-10` confirmed `#3` is Todo with Work Type `Research Spike`, Readiness Gate `Research`, and Module Boundary `Product Pipeline`.
+
 ## 2026-05-19 - Review Launch Intake Desk artifact run
 
 **What:** Reviewed the generated Launch Intake Desk artifact run for `4-10/Nexa-ProductPipeline#2` and recorded the verdict at `product-pipeline/reviews/2026-05-19-launch-intake-desk-artifact-run-review.md`.

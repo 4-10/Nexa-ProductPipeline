@@ -2,6 +2,28 @@
 
 Record durable decisions in reverse chronological order.
 
+## 2026-05-19 - Validate managed pilot before billing or self-serve productization
+
+**Tags:** launch-intake, managed-pilot, commercialization, readiness-gate
+
+**Context:** Overwatch selected a managed private pilot with local-first/customer-workspace execution as the v0 commercialization path after the Launch Intake Desk artifact review was accepted.
+
+**Options considered:**
+
+- A: Build billing or public pricing next.
+- B: Re-materialize the Launch Intake app next.
+- C: Validate the managed-pilot offer as Product Pipeline research first.
+
+**Decision:** Choose C.
+
+**Why:** Buyer, package, trust objections, and pricing hypothesis are the next riskiest unknowns. Product Pipeline can answer those without prematurely creating Dev Ready implementation work or making public SaaS/security claims.
+
+**Consequences:**
+
+- The next Product Pipeline item stays Research gate.
+- Billing, public pricing, self-serve SaaS, and AppBuilder re-materialization remain blocked until offer validation and trust/handoff follow-ups are clearer.
+- Future website copy and AppBuilder handoff work can cite the validation artifact.
+
 ## 2026-05-19 - Accept Launch Intake Desk artifact run as Draft Ready
 
 **Tags:** launch-intake, artifact-review, readiness-gate, github-output

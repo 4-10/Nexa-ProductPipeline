@@ -1,21 +1,21 @@
 # Nexa Product Pipeline - CURRENT STATE
 
 **Last updated:** 2026-05-19
-**Updated by:** Codex session (Launch Intake artifact review closeout)
+**Updated by:** Codex session (managed-pilot offer validation queue)
 
 ## Active Focus
 
 The Nexa Product Pipeline repository has been cloned and initialized with a sanitized working KB based on the Project-X KB pattern. A repo-linked GitHub Project has been created for module work tracking.
 
-The active focus is now the next approval checkpoint after closing the Launch Intake Desk artifact review. A local packet-to-run generator exists, has a regression test, and produced the Launch Intake Desk artifact run from the pilot KB packet draft. Candidate 1 from the generated proposal was reviewed through `4-10/Nexa-ProductPipeline#2`, accepted as Draft Ready Product Pipeline output, and closed/Done. Additional live issue output remains blocked until a separate approval checkpoint.
+The active focus is now managed-pilot offer validation for Launch Intake. A local packet-to-run generator exists, has a regression test, and produced the Launch Intake Desk artifact run from the pilot KB packet draft. Candidate 1 from the generated proposal was reviewed through `4-10/Nexa-ProductPipeline#2`, accepted as Draft Ready Product Pipeline output, and closed/Done. Richard explicitly waived the normal approval checkpoint on 2026-05-19 for the overnight run, so the next safe live Product Pipeline item is `4-10/Nexa-ProductPipeline#3`, the managed-pilot offer validation research spike.
 
 ## Last Action Taken
 
-Reviewed the generated Launch Intake Desk artifact set, recorded the outcome at `product-pipeline/reviews/2026-05-19-launch-intake-desk-artifact-run-review.md`, closed `4-10/Nexa-ProductPipeline#2`, and moved its Project `#4` row to Done. The review accepts the run as Draft Ready Product Pipeline output, not Dev Ready implementation work.
+Created `4-10/Nexa-ProductPipeline#3` from `product-pipeline/proposals/issue-bodies/launch-intake-managed-pilot-offer-validation.md`, added it to Product Pipeline Project `#4`, and set it to Status `Todo`, Work Type `Research Spike`, Readiness Gate `Research`, and Module Boundary `Product Pipeline`.
 
 ## Next Intended Move
 
-Choose the next bounded follow-up lane through a separate approval checkpoint before creating any further live output. The best candidates are managed-pilot research/offer validation, public-surface design review, IP/customer-handoff architecture, or AppBuilder re-materialization with promoted DB defaults.
+Work `4-10/Nexa-ProductPipeline#3` to produce buyer, package, objection, and pricing-hypothesis artifacts before any billing, public pricing, self-serve SaaS, or Dev Ready AppBuilder work.
 
 ## Open Decisions
 
@@ -24,7 +24,7 @@ Choose the next bounded follow-up lane through a separate approval checkpoint be
 - Should Product Pipeline use the existing Nexa safe-task claim protocol immediately, or wait until implementation work starts?
 - Should the first module artifact live as a Codex skill under this repo, a Nexa-AOS skill, or both during development?
 - Should packet-to-run generation become a Codex/Nexa skill after one more manually reviewed run proves the shape?
-- Which bounded follow-up lane should be approved next: managed-pilot research/offer validation, public-surface design review, IP/customer-handoff architecture, or AppBuilder re-materialization with promoted DB defaults?
+- What exact first paid-pilot package and pricing hypothesis should Product Pipeline recommend testing?
 
 ## State Health
 
@@ -62,6 +62,8 @@ Choose the next bounded follow-up lane through a separate approval checkpoint be
 - `product-pipeline/proposals/2026-05-19-launch-intake-desk-artifact-run-proposal.md` - proposal approved for Candidate 1 only.
 - `product-pipeline/proposals/issue-bodies/launch-intake-desk-artifact-run-review.md` - issue body used for `4-10/Nexa-ProductPipeline#2`.
 - `product-pipeline/reviews/2026-05-19-launch-intake-desk-artifact-run-review.md` - accepted Draft Ready review outcome for the Launch Intake Desk artifact run.
+- `product-pipeline/proposals/issue-bodies/launch-intake-managed-pilot-offer-validation.md` - Research-gate issue body for the next managed-pilot offer validation item.
+- `https://github.com/4-10/Nexa-ProductPipeline/issues/3` - open/Todo tracker item for managed-pilot offer validation.
 - `https://github.com/4-10/Nexa-ProductPipeline/issues/2` - closed/Done tracker item for reviewing the Launch Intake Desk full artifact run.
 - `https://github.com/4-10/Nexa-ProductPipeline/issues/1` - closed/Done tracker item for the Launch Intake packet contract.
 - `.github/ISSUE_TEMPLATE/` - initial research spike, feature/story, and defect issue forms.
@@ -74,7 +76,7 @@ Choose the next bounded follow-up lane through a separate approval checkpoint be
 
 ## Active Testbed / Environment
 
-KB, GitHub Project, and local PowerShell generator only. No Product Pipeline runtime service, UI, packaged skill, or automation worker exists yet. The accepted v0 artifact set has produced one review-gated pilot run, one reusable packet contract, one generated packet-to-run artifact set, and one approved live review issue.
+KB, GitHub Project, and local PowerShell generator only. No Product Pipeline runtime service, UI, packaged skill, or automation worker exists yet. The accepted v0 artifact set has produced one review-gated pilot run, one reusable packet contract, one generated packet-to-run artifact set, one approved live review issue, and one live Research-gate managed-pilot offer validation item.
 
 ## Failure Modes To Watch For
 
