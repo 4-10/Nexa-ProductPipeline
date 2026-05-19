@@ -10,7 +10,7 @@ Append meaningful changes in reverse chronological order.
 
 **Files:** `product-pipeline/reviews/2026-05-19-launch-intake-desk-artifact-run-review.md`, `product-pipeline/proposals/2026-05-19-launch-intake-desk-artifact-run-proposal.md`, `projects/nexa-productpipeline/CURRENT-STATE.md`, `projects/nexa-productpipeline/AUDIT-LOG.md`, `projects/nexa-productpipeline/DECISION-LOG.md`, `projects/nexa-productpipeline/STATE-SNAPSHOT.md`, `INDEX.md`.
 
-**Verification:** The run artifacts, generated proposal, and GitHub issue body were inspected. The review accepts the output as Draft Ready Product Pipeline material, not Dev Ready implementation work; additional live issue output remains blocked pending a separate approval checkpoint.
+**Verification:** The run artifacts, generated proposal, and GitHub issue body were inspected. The review accepts the output as Draft Ready Product Pipeline material, not Dev Ready implementation work; `4-10/Nexa-ProductPipeline#2` was closed and its Project `#4` row moved to Done; additional live issue output remains blocked pending a separate approval checkpoint.
 
 ## 2026-05-19 - Create approved Launch Intake Desk review issue
 

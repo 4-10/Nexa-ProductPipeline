@@ -1,17 +1,17 @@
 # Nexa Product Pipeline - CURRENT STATE
 
 **Last updated:** 2026-05-19
-**Updated by:** Codex session (Launch Intake artifact review)
+**Updated by:** Codex session (Launch Intake artifact review closeout)
 
 ## Active Focus
 
 The Nexa Product Pipeline repository has been cloned and initialized with a sanitized working KB based on the Project-X KB pattern. A repo-linked GitHub Project has been created for module work tracking.
 
-The active focus is now the next approval checkpoint after reviewing the Launch Intake Desk artifact run. A local packet-to-run generator exists, has a regression test, and produced the Launch Intake Desk artifact run from the pilot KB packet draft. Candidate 1 from the generated proposal was reviewed through `4-10/Nexa-ProductPipeline#2` and accepted as Draft Ready Product Pipeline output. Additional live issue output remains blocked until a separate approval checkpoint.
+The active focus is now the next approval checkpoint after closing the Launch Intake Desk artifact review. A local packet-to-run generator exists, has a regression test, and produced the Launch Intake Desk artifact run from the pilot KB packet draft. Candidate 1 from the generated proposal was reviewed through `4-10/Nexa-ProductPipeline#2`, accepted as Draft Ready Product Pipeline output, and closed/Done. Additional live issue output remains blocked until a separate approval checkpoint.
 
 ## Last Action Taken
 
-Reviewed the generated Launch Intake Desk artifact set and recorded the outcome at `product-pipeline/reviews/2026-05-19-launch-intake-desk-artifact-run-review.md`. The review accepts the run as Draft Ready Product Pipeline output, not Dev Ready implementation work.
+Reviewed the generated Launch Intake Desk artifact set, recorded the outcome at `product-pipeline/reviews/2026-05-19-launch-intake-desk-artifact-run-review.md`, closed `4-10/Nexa-ProductPipeline#2`, and moved its Project `#4` row to Done. The review accepts the run as Draft Ready Product Pipeline output, not Dev Ready implementation work.
 
 ## Next Intended Move
 
@@ -62,7 +62,7 @@ Choose the next bounded follow-up lane through a separate approval checkpoint be
 - `product-pipeline/proposals/2026-05-19-launch-intake-desk-artifact-run-proposal.md` - proposal approved for Candidate 1 only.
 - `product-pipeline/proposals/issue-bodies/launch-intake-desk-artifact-run-review.md` - issue body used for `4-10/Nexa-ProductPipeline#2`.
 - `product-pipeline/reviews/2026-05-19-launch-intake-desk-artifact-run-review.md` - accepted Draft Ready review outcome for the Launch Intake Desk artifact run.
-- `https://github.com/4-10/Nexa-ProductPipeline/issues/2` - tracker item for reviewing the Launch Intake Desk full artifact run; review outcome accepted and closeout expected on Project `#4`.
+- `https://github.com/4-10/Nexa-ProductPipeline/issues/2` - closed/Done tracker item for reviewing the Launch Intake Desk full artifact run.
 - `https://github.com/4-10/Nexa-ProductPipeline/issues/1` - closed/Done tracker item for the Launch Intake packet contract.
 - `.github/ISSUE_TEMPLATE/` - initial research spike, feature/story, and defect issue forms.
 - GitHub labels - initial type, area, and claim labels for module work.

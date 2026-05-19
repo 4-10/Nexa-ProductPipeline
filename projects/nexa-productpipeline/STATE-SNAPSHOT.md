@@ -23,7 +23,7 @@
 | Project URL | `https://github.com/users/4-10/projects/4` |
 | Linked repo | `4-10/Nexa-ProductPipeline` |
 | Custom fields | `Work Type`, `Readiness Gate`, `Module Boundary` |
-| Current live issue | `4-10/Nexa-ProductPipeline#2` - review accepted; Project closeout expected |
+| Current live issue | None. `4-10/Nexa-ProductPipeline#2` is closed/Done after accepted review. |
 
 ## Reference Inputs Reviewed At Initialization
 
