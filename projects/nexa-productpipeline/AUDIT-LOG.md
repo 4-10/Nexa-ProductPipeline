@@ -2,6 +2,16 @@
 
 Append meaningful changes in reverse chronological order.
 
+## 2026-05-19 - Complete managed-pilot offer validation
+
+**What:** Added `product-pipeline/research/2026-05-19-launch-intake-managed-pilot-offer-validation.md` as the accepted Research-gate output for `4-10/Nexa-ProductPipeline#3`, routed it through `INDEX.md`, recorded the private pricing hypothesis decision, and moved the Project `#4` row to Done after the issue closed.
+
+**Why:** The Launch Intake commercial lane needed buyer, package, pricing, objection, and validation-script clarity before Overwatch public trust/IP work, local-runner handoff work, payment, website copy, billing, self-serve SaaS, or AppBuilder implementation.
+
+**Files:** `product-pipeline/research/2026-05-19-launch-intake-managed-pilot-offer-validation.md`, `product-pipeline/README.md`, `product-pipeline/proposals/issue-bodies/launch-intake-managed-pilot-offer-validation.md`, `INDEX.md`, `projects/nexa-productpipeline/CURRENT-STATE.md`, `projects/nexa-productpipeline/STATE-SNAPSHOT.md`, `projects/nexa-productpipeline/AUDIT-LOG.md`, `projects/nexa-productpipeline/DECISION-LOG.md`.
+
+**Verification:** Packet-to-run generator self-test passed, local Markdown link check passed, placeholder scan returned no actionable hits, `git diff --check` passed, and `gh issue view 3 --repo 4-10/Nexa-ProductPipeline` plus `gh project item-list 4 --owner 4-10` confirmed `#3` closed/Done with Work Type `Research Spike`, Readiness Gate `Research`, and Module Boundary `Product Pipeline`.
+
 ## 2026-05-19 - Queue managed-pilot offer validation
 
 **What:** Added `product-pipeline/proposals/issue-bodies/launch-intake-managed-pilot-offer-validation.md`, created `4-10/Nexa-ProductPipeline#3`, added it to Product Pipeline Project `#4`, and set Project fields to Status `Todo`, Work Type `Research Spike`, Readiness Gate `Research`, and Module Boundary `Product Pipeline`.

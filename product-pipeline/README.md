@@ -32,6 +32,7 @@ Product Pipeline v0 does not own:
 - `checklists/` - readiness and dependency gates.
 - `runs/` - concrete Product Pipeline runs for a specific product idea or pilot.
 - `proposals/` - reviewable output proposals before GitHub creation.
+- `research/` - accepted research-gate outputs that validate package, buyer, pricing, objection, or market hypotheses.
 - `reviews/` - durable review outcomes for accepted, revised, or blocked artifact runs.
 - `tools/` - local automation for repeatable artifact synthesis and verification.
 - `how-to/` - repeatable procedures for using outputs.

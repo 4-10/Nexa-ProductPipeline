@@ -1,6 +1,6 @@
 # Product Pipeline: Validate Launch Intake managed pilot offer
 
-Live issue: `https://github.com/4-10/Nexa-ProductPipeline/issues/3` - open/Todo.
+Live issue: `https://github.com/4-10/Nexa-ProductPipeline/issues/3` - closed/Done.
 
 ## Goal
 

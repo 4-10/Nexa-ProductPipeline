@@ -2,6 +2,28 @@
 
 Record durable decisions in reverse chronological order.
 
+## 2026-05-19 - Use private managed-pilot pricing hypotheses
+
+**Tags:** launch-intake, pricing, managed-pilot, commercialization
+
+**Context:** The Research-gate offer validation artifact needed a concrete pricing hypothesis without turning the package into a public price sheet or billing implementation trigger.
+
+**Options considered:**
+
+- A: Publish pricing immediately and build payment flow.
+- B: Avoid price discussion until after more implementation.
+- C: Use private buyer-conversation hypotheses: `$4,500` managed pilot, `$2,500` artifact-only, and `$7,500-$12,500` local-workspace pilot.
+
+**Decision:** Choose C.
+
+**Why:** A private price ladder supports real buyer discovery while avoiding unsupported public claims. It keeps the package positioned below full agency MVP pricing but above a cheap template or chat-only deliverable.
+
+**Consequences:**
+
+- Do not build payment, public pricing, or subscription tiers from this artifact alone.
+- Record buyer objections and willingness-to-pay evidence before publishing package language.
+- Use Overwatch public trust and local-runner artifacts before selling a code-aware local-workspace variant.
+
 ## 2026-05-19 - Validate managed pilot before billing or self-serve productization
 
 **Tags:** launch-intake, managed-pilot, commercialization, readiness-gate
