@@ -2,6 +2,16 @@
 
 Append meaningful changes in reverse chronological order.
 
+## 2026-05-19 - Create approved Launch Intake Desk review issue
+
+**What:** Created `4-10/Nexa-ProductPipeline#2` from approved Candidate 1 in the generated Launch Intake Desk proposal, added it to Product Pipeline Project `#4`, and set Project fields to Status `Todo`, Work Type `Task`, Readiness Gate `Draft Ready`, and Module Boundary `Product Pipeline`.
+
+**Why:** Richard approved moving the generated proposal through the next gate. Candidate 1 is the only safe live output because Candidate 2, AppBuilder generated-app DB isolation, is already complete and Candidate 3 approval is scoped to this single review issue.
+
+**Files:** `product-pipeline/proposals/2026-05-19-launch-intake-desk-artifact-run-proposal.md`, `product-pipeline/proposals/issue-bodies/launch-intake-desk-artifact-run-review.md`, `projects/nexa-productpipeline/CURRENT-STATE.md`, `projects/nexa-productpipeline/AUDIT-LOG.md`, `projects/nexa-productpipeline/DECISION-LOG.md`, `INDEX.md`.
+
+**Verification:** `gh auth status`, `gh project view 4 --owner 4-10`, exact-title duplicate check, `gh issue view 2 --repo 4-10/Nexa-ProductPipeline`, and `gh project item-list 4 --owner 4-10 --limit 100 --format json` confirmed the issue and Project fields. Local Markdown link check, unresolved-placeholder scan, and `git diff --check` passed before commit.
+
 ## 2026-05-19 - Add packet-to-run artifact generator
 
 **What:** Added a local Product Pipeline generator that converts an accepted parent-KB packet draft into a full artifact run plus review-gated GitHub output proposal, then generated the Launch Intake Desk artifact run from the pilot KB packet draft.

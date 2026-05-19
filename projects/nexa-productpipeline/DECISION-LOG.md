@@ -2,6 +2,28 @@
 
 Record durable decisions in reverse chronological order.
 
+## 2026-05-19 - Approve Candidate 1 live review issue only
+
+**Tags:** github-output, launch-intake, review-gate, issue-creation
+
+**Context:** The generated Launch Intake Desk artifact run proposed three outputs. Candidate 2, AppBuilder generated-app DB isolation promotion, was already completed in the AppBuilder source path. Candidate 3 was the approval/deferral gate for live GitHub output.
+
+**Options considered:**
+
+- A: Create all generated candidates as live issues.
+- B: Create only Candidate 1 as a Draft Ready review issue.
+- C: Create no live issues and keep all work in local artifacts.
+
+**Decision:** Choose B.
+
+**Why:** Candidate 1 is review work, not implementation work, and it is concrete enough for a live Product Pipeline tracker item. Creating more issues would bypass the new review gate and risk board spam.
+
+**Consequences:**
+
+- `4-10/Nexa-ProductPipeline#2` is the only live issue created from this proposal.
+- The issue remains Draft Ready, not Dev Ready.
+- Additional issue output requires a separate explicit approval checkpoint after Candidate 1 review.
+
 ## 2026-05-19 - Keep packet-to-run generation review-only
 
 **Tags:** artifact-generation, launch-intake, github-output, review-gate

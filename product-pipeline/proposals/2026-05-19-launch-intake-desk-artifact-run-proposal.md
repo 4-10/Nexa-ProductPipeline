@@ -1,22 +1,28 @@
 ﻿# GitHub Output Proposal - Launch Intake Desk Artifact Run
 
-## Review Required
+## Approval Status
 
-This proposal is generated from `product-pipeline/runs/2026-05-19-launch-intake-desk-artifact-run/`. It does not create GitHub issues.
+Approved for Candidate 1 only on 2026-05-19.
+
+Created issue:
+
+- `4-10/Nexa-ProductPipeline#2` - Product Pipeline: Review Launch Intake Desk full artifact run
+
+This proposal was generated from `product-pipeline/runs/2026-05-19-launch-intake-desk-artifact-run/`. Candidate 2 was completed separately in AppBuilder source at `C:/Projects/Nexa-BareAppFoundation-v0@53ed52e`. Candidate 3 approval is satisfied only for Candidate 1; additional live GitHub output still requires a separate approval checkpoint.
 
 ## Recommendation
 
-Review Candidate 1 first. Defer Candidate 2 or Candidate 3 unless Overwatch chooses AppBuilder DB isolation or live issue output as the next lane.
+Review Candidate 1 through `4-10/Nexa-ProductPipeline#2`. Defer additional live issue output until the Candidate 1 review outcome is recorded.
 
 ## Candidate Output
 
-- Candidate 1: Product Pipeline review of the generated artifact set.
-- Candidate 2: AppBuilder generated-app DB isolation promotion.
-- Candidate 3: Overwatch approval or deferral of live GitHub output.
+- Candidate 1: Product Pipeline review of the generated artifact set. Created as `4-10/Nexa-ProductPipeline#2`.
+- Candidate 2: AppBuilder generated-app DB isolation promotion. Completed before Candidate 1 issue creation.
+- Candidate 3: Overwatch approval or deferral of live GitHub output. Approved only for Candidate 1.
 
 ## Approval Gate
 
-Live GitHub mutation is blocked until this proposal is explicitly approved.
+Live GitHub mutation beyond `4-10/Nexa-ProductPipeline#2` remains blocked until explicitly approved.
 
 ## Source
 

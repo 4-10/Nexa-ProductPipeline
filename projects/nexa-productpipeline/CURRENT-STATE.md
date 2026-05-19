@@ -1,21 +1,21 @@
 # Nexa Product Pipeline - CURRENT STATE
 
 **Last updated:** 2026-05-19
-**Updated by:** Codex session (packet-to-run generator)
+**Updated by:** Codex session (approved live review issue)
 
 ## Active Focus
 
 The Nexa Product Pipeline repository has been cloned and initialized with a sanitized working KB based on the Project-X KB pattern. A repo-linked GitHub Project has been created for module work tracking.
 
-The active focus is now the reusable bridge from accepted Launch Intake packet drafts into full Product Pipeline artifact runs. A local packet-to-run generator exists, has a regression test, and has produced the Launch Intake Desk artifact run from the pilot KB packet draft. The generated output is Draft Ready review material only; it is not Dev Ready and does not authorize live GitHub issue creation.
+The active focus is now reviewing the Launch Intake Desk artifact run through a single approved live Product Pipeline issue. A local packet-to-run generator exists, has a regression test, and produced the Launch Intake Desk artifact run from the pilot KB packet draft. Candidate 1 from the generated proposal is live as `4-10/Nexa-ProductPipeline#2`; additional live issue output remains blocked until a separate approval checkpoint.
 
 ## Last Action Taken
 
-Added `product-pipeline/tools/New-ProductPipelineRunFromPacket.ps1` and `product-pipeline/tools/Test-ProductPipelineRunFromPacket.ps1`, then generated `product-pipeline/runs/2026-05-19-launch-intake-desk-artifact-run/` plus `product-pipeline/proposals/2026-05-19-launch-intake-desk-artifact-run-proposal.md` from the Launch Intake pilot packet draft.
+Created `4-10/Nexa-ProductPipeline#2` from approved Candidate 1, added it to Project `#4`, and set Project fields to Status `Todo`, Work Type `Task`, Readiness Gate `Draft Ready`, and Module Boundary `Product Pipeline`. The issue body is recorded at `product-pipeline/proposals/issue-bodies/launch-intake-desk-artifact-run-review.md`.
 
 ## Next Intended Move
 
-Review the generated Launch Intake Desk artifact run, then choose one of two lanes: approve specific live GitHub output from the proposal, or keep issue output blocked and promote the proven AppBuilder generated-app DB isolation defaults into the AppGenerator source path.
+Work `4-10/Nexa-ProductPipeline#2`: review the generated Launch Intake Desk artifact set, record whether it is accepted or needs revision, then request a separate approval checkpoint before creating any further live output.
 
 ## Open Decisions
 
@@ -24,6 +24,7 @@ Review the generated Launch Intake Desk artifact run, then choose one of two lan
 - Should Product Pipeline use the existing Nexa safe-task claim protocol immediately, or wait until implementation work starts?
 - Should the first module artifact live as a Codex skill under this repo, a Nexa-AOS skill, or both during development?
 - Should packet-to-run generation become a Codex/Nexa skill after one more manually reviewed run proves the shape?
+- Should Candidate 1 review accept the generated artifact set as-is, revise it, or convert gaps into follow-up work?
 
 ## State Health
 
@@ -58,7 +59,9 @@ Review the generated Launch Intake Desk artifact run, then choose one of two lan
 - `product-pipeline/tools/New-ProductPipelineRunFromPacket.ps1` - local packet-draft to artifact-run generator.
 - `product-pipeline/tools/Test-ProductPipelineRunFromPacket.ps1` - generator regression test.
 - `product-pipeline/runs/2026-05-19-launch-intake-desk-artifact-run/` - generated full artifact run from the Launch Intake pilot KB packet draft.
-- `product-pipeline/proposals/2026-05-19-launch-intake-desk-artifact-run-proposal.md` - review-gated proposal for the generated run; no live issues created.
+- `product-pipeline/proposals/2026-05-19-launch-intake-desk-artifact-run-proposal.md` - proposal approved for Candidate 1 only.
+- `product-pipeline/proposals/issue-bodies/launch-intake-desk-artifact-run-review.md` - issue body used for `4-10/Nexa-ProductPipeline#2`.
+- `https://github.com/4-10/Nexa-ProductPipeline/issues/2` - open/Todo tracker item for reviewing the Launch Intake Desk full artifact run.
 - `https://github.com/4-10/Nexa-ProductPipeline/issues/1` - closed/Done tracker item for the Launch Intake packet contract.
 - `.github/ISSUE_TEMPLATE/` - initial research spike, feature/story, and defect issue forms.
 - GitHub labels - initial type, area, and claim labels for module work.
@@ -70,7 +73,7 @@ Review the generated Launch Intake Desk artifact run, then choose one of two lan
 
 ## Active Testbed / Environment
 
-KB, GitHub Project, and local PowerShell generator only. No Product Pipeline runtime service, UI, packaged skill, or automation worker exists yet. The accepted v0 artifact set has produced one review-gated pilot run, one reusable packet contract, and one generated packet-to-run artifact set.
+KB, GitHub Project, and local PowerShell generator only. No Product Pipeline runtime service, UI, packaged skill, or automation worker exists yet. The accepted v0 artifact set has produced one review-gated pilot run, one reusable packet contract, one generated packet-to-run artifact set, and one approved live review issue.
 
 ## Failure Modes To Watch For
 
