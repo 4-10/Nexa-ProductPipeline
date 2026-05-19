@@ -28,5 +28,6 @@ Product Pipeline v0 does not own:
 - `templates/` - reusable artifact templates.
 - `workflows/` - operating instructions for running Product Pipeline.
 - `checklists/` - readiness and dependency gates.
+- `runs/` - concrete Product Pipeline runs for a specific product idea or pilot.
 - `proposals/` - reviewable output proposals before GitHub creation.
 - `how-to/` - repeatable procedures for using outputs.

@@ -30,6 +30,8 @@ Master keyword to path lookup. When you need information about a topic, search t
 - **v0 implementation plan, templates, workflow, gates, dogfood proposal** -> [docs/superpowers/plans/2026-05-16-product-pipeline-v0-implementation.md](docs/superpowers/plans/2026-05-16-product-pipeline-v0-implementation.md)
 - **self dogfood issue proposal, first issues, proposed backlog** -> [product-pipeline/proposals/2026-05-16-self-dogfood-issue-proposal.md](product-pipeline/proposals/2026-05-16-self-dogfood-issue-proposal.md)
 - **activation review, v0 accepted baseline, Overwatch #4, deferred issue output** -> [product-pipeline/reviews/2026-05-18-v0-activation-review.md](product-pipeline/reviews/2026-05-18-v0-activation-review.md)
+- **launch intake pilot, Overwatch #7, first idea-to-app pilot, reusable intake packet** -> [product-pipeline/runs/2026-05-18-nodera-launch-intake/README.md](product-pipeline/runs/2026-05-18-nodera-launch-intake/README.md)
+- **launch intake proposal, pilot issue candidates, review checkpoint, do not create issues yet** -> [product-pipeline/proposals/2026-05-18-nodera-launch-intake-pilot-proposal.md](product-pipeline/proposals/2026-05-18-nodera-launch-intake-pilot-proposal.md)
 - **product strategy, why this module exists, velocity, backlog drought, product operating layer** -> [shared/reference/product-strategy.md](shared/reference/product-strategy.md)
 - **research, discovery, market study, target segment, comparative analysis, evidence** -> [shared/reference/research-discovery.md](shared/reference/research-discovery.md)
 - **intake, human guidance, agile questioning, epics, stories, tasks, artifact ladder** -> [shared/reference/intake-to-artifacts.md](shared/reference/intake-to-artifacts.md)

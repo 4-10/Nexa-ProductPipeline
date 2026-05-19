@@ -1,25 +1,26 @@
 # Nexa Product Pipeline - CURRENT STATE
 
 **Last updated:** 2026-05-18
-**Updated by:** Codex Overwatch session (v0 activation review)
+**Updated by:** Codex Overwatch session (Launch Intake pilot run)
 
 ## Active Focus
 
 The Nexa Product Pipeline repository has been cloned and initialized with a sanitized working KB based on the Project-X KB pattern. A repo-linked GitHub Project has been created for module work tracking.
 
-The active focus is that Product Pipeline v0 has been accepted as the baseline workflow artifact set for the next NoderaOS integration step. The workflow remains review-gated: no GitHub issues or Project items are created until Richard approves exact candidates or a later policy narrows a trusted auto-create path.
+The active focus is that Product Pipeline v0 has now been used for the first Overwatch `#7` pilot idea: Nodera Launch Intake. This is a review-gated artifact run only. No GitHub issues or Project items have been created from the run.
 
 ## Last Action Taken
 
-Reviewed and accepted the Product Pipeline v0 templates, workflow, readiness gates, self-dogfood issue proposal, and review-gated GitHub output procedure as the baseline input for Overwatch `#6`.
+Created the Nodera Launch Intake pilot artifact run and a review-needed GitHub output proposal for Overwatch `#7`.
 
 ## Next Intended Move
 
-Use Overwatch `#6` to define the cross-module Product Pipeline -> KB Core -> AppBuilder handoff contract. Candidate issue creation from the self-dogfood proposal remains deferred until exact candidate approval.
+Review the Launch Intake proposal. If accepted, create or assign Candidate 1 first: define the reusable Launch Intake packet contract. Keep Candidate 3 blocked until the AppBuilder substrate decision is made.
 
 ## Open Decisions
 
 - Should v0 issue creation require explicit approval every time, or can trusted runs auto-create research spikes?
+- Should the Launch Intake Candidate 1 issue be created now, or should Overwatch own the packet contract directly?
 - Should Product Pipeline use the existing Nexa safe-task claim protocol immediately, or wait until implementation work starts?
 - Should the first module artifact live as a Codex skill under this repo, a Nexa-AOS skill, or both during development?
 
@@ -48,6 +49,8 @@ Use Overwatch `#6` to define the cross-module Product Pipeline -> KB Core -> App
 - `product-pipeline/proposals/2026-05-16-self-dogfood-issue-proposal.md` - self-dogfood proposal for the first Product Pipeline issue candidates.
 - `product-pipeline/how-to/create-github-output-from-proposal.md` - review-gated procedure for creating approved GitHub issues and Project items.
 - `product-pipeline/reviews/2026-05-18-v0-activation-review.md` - Overwatch `#4` activation review and accepted v0 baseline decision.
+- `product-pipeline/runs/2026-05-18-nodera-launch-intake/` - first Overwatch `#7` Product Pipeline run for a small reusable pilot idea.
+- `product-pipeline/proposals/2026-05-18-nodera-launch-intake-pilot-proposal.md` - review-needed GitHub output proposal for Launch Intake issue candidates.
 - `.github/ISSUE_TEMPLATE/` - initial research spike, feature/story, and defect issue forms.
 - GitHub labels - initial type, area, and claim labels for module work.
 - `shared/reference/architecture.md` - first module-boundary reference.
@@ -58,7 +61,7 @@ Use Overwatch `#6` to define the cross-module Product Pipeline -> KB Core -> App
 
 ## Active Testbed / Environment
 
-KB and GitHub Project only. No Product Pipeline runtime, CLI, service, skill, prompt pack, or automation artifact exists yet. The accepted v0 artifact set is ready to feed the cross-module integration contract.
+KB and GitHub Project only. No Product Pipeline runtime, CLI, service, skill, prompt pack, or automation artifact exists yet. The accepted v0 artifact set has produced one review-gated pilot run.
 
 ## Failure Modes To Watch For
 
