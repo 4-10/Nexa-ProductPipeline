@@ -15,6 +15,7 @@ Product Pipeline v0 owns:
 - epic and issue candidate generation,
 - readiness and design gates,
 - parent KB update instructions,
+- packet-draft to artifact-run generation,
 - review-gated GitHub output.
 
 Product Pipeline v0 does not own:
@@ -31,4 +32,21 @@ Product Pipeline v0 does not own:
 - `checklists/` - readiness and dependency gates.
 - `runs/` - concrete Product Pipeline runs for a specific product idea or pilot.
 - `proposals/` - reviewable output proposals before GitHub creation.
+- `tools/` - local automation for repeatable artifact synthesis and verification.
 - `how-to/` - repeatable procedures for using outputs.
+
+## Local Tools
+
+Use the packet-to-run generator when an accepted parent-KB packet draft should become a full Product Pipeline artifact set:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File product-pipeline\tools\New-ProductPipelineRunFromPacket.ps1 -PacketDraftPath <packet-draft-path>
+```
+
+Verify the generator before relying on it:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File product-pipeline\tools\Test-ProductPipelineRunFromPacket.ps1
+```
+
+The generator creates review material only. It does not create GitHub issues, mark work Dev Ready, or bypass the proposal approval gate.

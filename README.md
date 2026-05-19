@@ -40,7 +40,10 @@ Nexa-ProductPipeline/
 |   |-- templates/
 |   |-- workflows/
 |   |-- checklists/
+|   |-- runs/
 |   |-- proposals/
+|   |-- reviews/
+|   |-- tools/
 |   `-- how-to/
 |-- _templates/
 `-- _meta/

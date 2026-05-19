@@ -2,6 +2,16 @@
 
 Append meaningful changes in reverse chronological order.
 
+## 2026-05-19 - Add packet-to-run artifact generator
+
+**What:** Added a local Product Pipeline generator that converts an accepted parent-KB packet draft into a full artifact run plus review-gated GitHub output proposal, then generated the Launch Intake Desk artifact run from the pilot KB packet draft.
+
+**Why:** The Launch Intake pilot needs a scalable bridge from accepted app/KB intake records into Product Pipeline review material without creating live issues or bypassing readiness gates.
+
+**Files:** `product-pipeline/tools/New-ProductPipelineRunFromPacket.ps1`, `product-pipeline/tools/Test-ProductPipelineRunFromPacket.ps1`, `product-pipeline/runs/2026-05-19-launch-intake-desk-artifact-run/`, `product-pipeline/proposals/2026-05-19-launch-intake-desk-artifact-run-proposal.md`, `product-pipeline/workflows/product-pipeline-v0.md`, `product-pipeline/README.md`, `INDEX.md`, `projects/nexa-productpipeline/CURRENT-STATE.md`, `projects/nexa-productpipeline/DECISION-LOG.md`, `projects/nexa-productpipeline/STATE-SNAPSHOT.md`, `projects/nexa-productpipeline/AUDIT-LOG.md`.
+
+**Verification:** `product-pipeline/tools/Test-ProductPipelineRunFromPacket.ps1`, local Markdown link check, unresolved-placeholder scan, and `git diff --check`.
+
 ## 2026-05-18 - Add Launch Intake packet contract
 
 **What:** Created approved issue `4-10/Nexa-ProductPipeline#1`, added it to GitHub Project `#4`, and implemented the reusable Launch Intake packet contract as both a template and a concrete packet for the Nodera Launch Intake run.

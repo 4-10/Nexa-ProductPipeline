@@ -1,6 +1,6 @@
 # Nexa Product Pipeline - State Snapshot
 
-**Last updated:** 2026-05-16
+**Last updated:** 2026-05-19
 
 ## Repository
 
@@ -9,7 +9,7 @@
 | Local path | `C:/Projects/Nexa-ProductPipeline` |
 | GitHub repo | `https://github.com/4-10/Nexa-ProductPipeline` |
 | Default branch | `main` |
-| Current artifact | Working KB and task tracker |
+| Current artifact | Working KB, task tracker, and local packet-to-run generator |
 | Runtime artifact | Not chosen yet |
 | Issue templates | `.github/ISSUE_TEMPLATE/` |
 | Initial labels | `type:spike`, `type:story`, `type:defect`, `area:kb`, `area:product`, `area:github-project`, `area:design`, `status:claimed` |
@@ -33,12 +33,13 @@
 
 ## Current Artifact Boundary
 
-This repo is not yet a CLI, service, app, skill, or prompt package. It is a KB-backed planning and build workspace for deciding and creating that future artifact.
+This repo is not yet a service, app, packaged skill, or prompt package. It is a KB-backed planning and build workspace with a local PowerShell generator for converting reviewed packet drafts into Product Pipeline artifact runs.
 
 ## Verification Commands
 
 ```powershell
 git -C C:\Projects\Nexa-ProductPipeline status --short --branch
 gh project view 4 --owner 4-10
+powershell -NoProfile -ExecutionPolicy Bypass -File C:\Projects\Nexa-ProductPipeline\product-pipeline\tools\Test-ProductPipelineRunFromPacket.ps1
 rg -n -e "Project[-]X" -e "project[-_]x" -e "Insurtech" -e "insurance" -e "carrier" -e "quoting" C:\Projects\Nexa-ProductPipeline
 ```

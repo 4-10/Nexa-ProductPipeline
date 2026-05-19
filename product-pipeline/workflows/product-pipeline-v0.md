@@ -65,6 +65,8 @@ Use `product-pipeline/templates/launch-intake-packet.md` when the run is intende
 
 The packet must map Product Pipeline artifacts to KB Core and AppBuilder handoff needs. It must name review status, current gate, next gate, non-goals, and any blocked decisions. Do not treat the packet as permission to create GitHub issues or build a UI.
 
+If a reviewed packet draft already exists in a parent KB, `product-pipeline/tools/New-ProductPipelineRunFromPacket.ps1` can generate the first full artifact run and review-gated proposal. Review and edit that generated run before considering live GitHub output.
+
 ## Step 9: Design Gate
 
 Use `product-pipeline/checklists/design-needed-gate.md`.

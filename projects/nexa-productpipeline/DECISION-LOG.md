@@ -2,6 +2,28 @@
 
 Record durable decisions in reverse chronological order.
 
+## 2026-05-19 - Keep packet-to-run generation review-only
+
+**Tags:** artifact-generation, launch-intake, github-output, review-gate
+
+**Context:** The Launch Intake pilot can now produce accepted parent-KB packet drafts. Product Pipeline needs a repeatable way to turn those packet drafts into full artifact runs without turning every draft into live GitHub work.
+
+**Options considered:**
+
+- A: Create GitHub issues directly from packet drafts.
+- B: Keep every packet-to-run conversion manual.
+- C: Add a local generator that creates reviewable Product Pipeline artifacts and a proposal, but no live GitHub mutations.
+
+**Decision:** Choose C.
+
+**Why:** The generator makes repeated Launch Intake handoffs faster and more consistent while preserving the quality gate that protects the GitHub backlog from draft or not-Dev-Ready work.
+
+**Consequences:**
+
+- Packet-to-run output is Draft Ready review material, not Dev Ready implementation work.
+- Live GitHub issue creation still requires explicit proposal approval.
+- Future Launch Intake surfaces can reuse the same generator boundary instead of inventing a new handoff shape.
+
 ## 2026-05-18 - Use Launch Intake packet as the first pilot handoff contract
 
 **Tags:** launch-intake, handoff-contract, parent-kb-integration, appbuilder-boundary

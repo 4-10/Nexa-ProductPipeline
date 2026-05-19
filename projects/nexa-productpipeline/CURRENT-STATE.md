@@ -1,21 +1,21 @@
 # Nexa Product Pipeline - CURRENT STATE
 
-**Last updated:** 2026-05-18
-**Updated by:** Codex session (Launch Intake packet contract)
+**Last updated:** 2026-05-19
+**Updated by:** Codex session (packet-to-run generator)
 
 ## Active Focus
 
 The Nexa Product Pipeline repository has been cloned and initialized with a sanitized working KB based on the Project-X KB pattern. A repo-linked GitHub Project has been created for module work tracking.
 
-The active focus is that Product Pipeline v0 has now produced the first reusable Launch Intake handoff packet for Overwatch `#7`. Candidate 1 was approved, created as `4-10/Nexa-ProductPipeline#1`, implemented as a packet template plus concrete Launch Intake packet, closed, and moved to Done in Project `#4`. Candidate 2 and Candidate 3 remain deferred.
+The active focus is now the reusable bridge from accepted Launch Intake packet drafts into full Product Pipeline artifact runs. A local packet-to-run generator exists, has a regression test, and has produced the Launch Intake Desk artifact run from the pilot KB packet draft. The generated output is Draft Ready review material only; it is not Dev Ready and does not authorize live GitHub issue creation.
 
 ## Last Action Taken
 
-Closed `4-10/Nexa-ProductPipeline#1` after adding the reusable Launch Intake packet contract artifacts at `27f1197`.
+Added `product-pipeline/tools/New-ProductPipelineRunFromPacket.ps1` and `product-pipeline/tools/Test-ProductPipelineRunFromPacket.ps1`, then generated `product-pipeline/runs/2026-05-19-launch-intake-desk-artifact-run/` plus `product-pipeline/proposals/2026-05-19-launch-intake-desk-artifact-run-proposal.md` from the Launch Intake pilot packet draft.
 
 ## Next Intended Move
 
-Use the accepted Launch Intake packet to decide the pilot KB destination and scaffold mode before starting Candidate 2. Keep Candidate 3 blocked until the AppBuilder substrate decision is made.
+Review the generated Launch Intake Desk artifact run, then choose one of two lanes: approve specific live GitHub output from the proposal, or keep issue output blocked and promote the proven AppBuilder generated-app DB isolation defaults into the AppGenerator source path.
 
 ## Open Decisions
 
@@ -23,6 +23,7 @@ Use the accepted Launch Intake packet to decide the pilot KB destination and sca
 - Where should the Launch Intake pilot KB live: inside Overwatch, a new local project folder, or a future repo?
 - Should Product Pipeline use the existing Nexa safe-task claim protocol immediately, or wait until implementation work starts?
 - Should the first module artifact live as a Codex skill under this repo, a Nexa-AOS skill, or both during development?
+- Should packet-to-run generation become a Codex/Nexa skill after one more manually reviewed run proves the shape?
 
 ## State Health
 
@@ -33,6 +34,7 @@ Use the accepted Launch Intake packet to decide the pilot KB destination and sca
 | Sanitization | No Project-X or vertical-domain residue remains outside historical notes about source seed | `rg -n -e "Project[-]X" -e "project[-_]x" -e "Insurtech" -e "insurance" -e "carrier" -e "quoting" C:\Projects\Nexa-ProductPipeline` |
 | Routing | `INDEX.md` points to existing files | Spot-check links in `INDEX.md` and run file existence checks if editing structure |
 | Module boundary | Repo clearly says this is a temporary build KB, not final module runtime KB | Read root `README.md`, this file, and `shared/reference/parent-kb-integration.md` |
+| Packet-to-run generator | Local generator passes its self-test before generated runs are trusted | `powershell -NoProfile -ExecutionPolicy Bypass -File C:\Projects\Nexa-ProductPipeline\product-pipeline\tools\Test-ProductPipelineRunFromPacket.ps1` |
 
 ## Recent Significant Artifacts
 
@@ -53,6 +55,10 @@ Use the accepted Launch Intake packet to decide the pilot KB destination and sca
 - `product-pipeline/runs/2026-05-18-nodera-launch-intake/launch-intake-packet.md` - accepted concrete packet for the next KB Core handoff.
 - `product-pipeline/proposals/2026-05-18-nodera-launch-intake-pilot-proposal.md` - review-needed GitHub output proposal for Launch Intake issue candidates.
 - `product-pipeline/templates/launch-intake-packet.md` - reusable packet contract template for future launch workflows.
+- `product-pipeline/tools/New-ProductPipelineRunFromPacket.ps1` - local packet-draft to artifact-run generator.
+- `product-pipeline/tools/Test-ProductPipelineRunFromPacket.ps1` - generator regression test.
+- `product-pipeline/runs/2026-05-19-launch-intake-desk-artifact-run/` - generated full artifact run from the Launch Intake pilot KB packet draft.
+- `product-pipeline/proposals/2026-05-19-launch-intake-desk-artifact-run-proposal.md` - review-gated proposal for the generated run; no live issues created.
 - `https://github.com/4-10/Nexa-ProductPipeline/issues/1` - closed/Done tracker item for the Launch Intake packet contract.
 - `.github/ISSUE_TEMPLATE/` - initial research spike, feature/story, and defect issue forms.
 - GitHub labels - initial type, area, and claim labels for module work.
@@ -64,7 +70,7 @@ Use the accepted Launch Intake packet to decide the pilot KB destination and sca
 
 ## Active Testbed / Environment
 
-KB and GitHub Project only. No Product Pipeline runtime, CLI, service, skill, prompt pack, or automation artifact exists yet. The accepted v0 artifact set has produced one review-gated pilot run and one reusable packet contract.
+KB, GitHub Project, and local PowerShell generator only. No Product Pipeline runtime service, UI, packaged skill, or automation worker exists yet. The accepted v0 artifact set has produced one review-gated pilot run, one reusable packet contract, and one generated packet-to-run artifact set.
 
 ## Failure Modes To Watch For
 
