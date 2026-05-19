@@ -4,8 +4,8 @@
 
 | Candidate | Gate | Reason |
 |---|---|---|
-| Define Launch Packet Contract | Draft Ready | Clear goal, scope, non-goals, and verification; needs review before issue creation. |
-| Initialize Launch Intake Pilot KB | Draft Ready | Bootstrap path exists, but destination/scaffold mode should be confirmed after packet acceptance. |
+| Define Launch Packet Contract | Accepted | Created as `4-10/Nexa-ProductPipeline#1`; packet template and concrete packet are now available. |
+| Initialize Launch Intake Pilot KB | Draft Ready | Bootstrap path exists, but destination/scaffold mode should be confirmed before bootstrap. |
 | Add Optional Command-Center Intake Surface | Blocked | AppBuilder substrate decision is still open. |
 
 ## Dev Ready Checklist Result
@@ -20,4 +20,4 @@ Reasons:
 
 ## Recommendation
 
-Review the proposal first. If accepted, create only Candidate 1 as the first live issue. Candidate 2 can follow immediately after the packet contract is accepted. Candidate 3 should stay blocked until the AppBuilder substrate decision is made.
+Candidate 1 has been accepted as the first live issue. Candidate 2 can follow after Overwatch confirms the pilot KB destination and scaffold mode. Candidate 3 should stay blocked until the AppBuilder substrate decision is made.

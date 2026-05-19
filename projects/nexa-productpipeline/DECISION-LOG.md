@@ -2,6 +2,28 @@
 
 Record durable decisions in reverse chronological order.
 
+## 2026-05-18 - Use Launch Intake packet as the first pilot handoff contract
+
+**Tags:** launch-intake, handoff-contract, parent-kb-integration, appbuilder-boundary
+
+**Context:** Overwatch `#7` needs to move from a Product Pipeline run into KB Core and AppBuilder without overbuilding a UI or guessing the pilot path. The approved Candidate 1 issue asks for a reusable packet contract.
+
+**Options considered:**
+
+- A: Initialize the pilot KB immediately from the run artifacts.
+- B: Build a visible intake screen first.
+- C: Define a reusable Launch Intake packet before KB or AppBuilder work.
+
+**Decision:** Choose C.
+
+**Why:** The packet captures the minimum reusable handoff: product context, source artifacts, KB Core needs, AppBuilder needs, review status, next gate, and non-goals. It keeps the next step small while making later web, desktop, mobile, or managed-service intake surfaces easier to build from the same parent artifact.
+
+**Consequences:**
+
+- Candidate 2 should consume the accepted packet before initializing the pilot KB.
+- Candidate 3 remains blocked until the AppBuilder substrate decision is explicit.
+- Future Product Pipeline runs that are meant to become launch workflows can reuse `product-pipeline/templates/launch-intake-packet.md`.
+
 ## 2026-05-16 - Start Product Pipeline v0 as a workflow/skill, not an app or service
 
 **Tags:** architecture, module-boundary, product-strategy, v0-design

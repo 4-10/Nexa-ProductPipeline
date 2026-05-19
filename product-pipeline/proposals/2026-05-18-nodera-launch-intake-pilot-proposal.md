@@ -4,9 +4,11 @@
 
 ```yaml
 status: review_needed
-create_github_issues_now: false
+create_github_issues_now: partial_candidate_1_created_after_review
 parent_overwatch_issue: 4-10/NoderaOS-Overwatch#7
 product_pipeline_run: product-pipeline/runs/2026-05-18-nodera-launch-intake
+created_issues:
+  - 4-10/Nexa-ProductPipeline#1
 ```
 
 ## Recommendation
@@ -155,9 +157,10 @@ create_now: false
 
 This proposal intentionally stops before GitHub issue creation.
 
+Update after review: Candidate 1 was approved and created as `4-10/Nexa-ProductPipeline#1`. Candidate 2 and Candidate 3 remain deferred.
+
 Review decision needed:
 
-- Approve Launch Intake as the Overwatch `#7` pilot idea.
-- Approve whether Candidate 1 should become the first live issue.
+- Confirm Candidate 1 closeout once the packet contract is merged.
 - Decide whether Candidate 2 can follow immediately after Candidate 1, or whether the pilot KB should be initialized manually by Overwatch first.
 - Keep Candidate 3 blocked until the AppBuilder substrate decision is made.

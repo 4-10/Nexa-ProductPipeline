@@ -59,6 +59,12 @@ Use `product-pipeline/checklists/readiness-gate.md`.
 
 Classify each candidate as Intake, Research, Spec, Draft Ready, Dev Ready, or Blocked.
 
+## Step 8A: Launch Intake Packet
+
+Use `product-pipeline/templates/launch-intake-packet.md` when the run is intended to become a pilot, generated app, hosted intake surface, managed sprint, or other reusable launch workflow.
+
+The packet must map Product Pipeline artifacts to KB Core and AppBuilder handoff needs. It must name review status, current gate, next gate, non-goals, and any blocked decisions. Do not treat the packet as permission to create GitHub issues or build a UI.
+
 ## Step 9: Design Gate
 
 Use `product-pipeline/checklists/design-needed-gate.md`.

@@ -11,6 +11,7 @@ Product Pipeline v0 owns:
 - structured product intake,
 - research and comparison artifacts,
 - opportunity synthesis,
+- reusable launch intake packet handoff,
 - epic and issue candidate generation,
 - readiness and design gates,
 - parent KB update instructions,

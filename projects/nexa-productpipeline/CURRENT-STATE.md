@@ -1,26 +1,26 @@
 # Nexa Product Pipeline - CURRENT STATE
 
 **Last updated:** 2026-05-18
-**Updated by:** Codex Overwatch session (Launch Intake pilot run)
+**Updated by:** Codex session (Launch Intake packet contract)
 
 ## Active Focus
 
 The Nexa Product Pipeline repository has been cloned and initialized with a sanitized working KB based on the Project-X KB pattern. A repo-linked GitHub Project has been created for module work tracking.
 
-The active focus is that Product Pipeline v0 has now been used for the first Overwatch `#7` pilot idea: Nodera Launch Intake. This is a review-gated artifact run only. No GitHub issues or Project items have been created from the run.
+The active focus is that Product Pipeline v0 has now produced the first reusable Launch Intake handoff packet for Overwatch `#7`. Candidate 1 was approved, created as `4-10/Nexa-ProductPipeline#1`, and implemented as a packet template plus concrete Launch Intake packet. Candidate 2 and Candidate 3 remain deferred.
 
 ## Last Action Taken
 
-Created the Nodera Launch Intake pilot artifact run and a review-needed GitHub output proposal for Overwatch `#7`.
+Created `4-10/Nexa-ProductPipeline#1` from the approved Launch Intake proposal and added the reusable Launch Intake packet contract artifacts.
 
 ## Next Intended Move
 
-Review the Launch Intake proposal. If accepted, create or assign Candidate 1 first: define the reusable Launch Intake packet contract. Keep Candidate 3 blocked until the AppBuilder substrate decision is made.
+Use the accepted Launch Intake packet to decide the pilot KB destination and scaffold mode before starting Candidate 2. Keep Candidate 3 blocked until the AppBuilder substrate decision is made.
 
 ## Open Decisions
 
 - Should v0 issue creation require explicit approval every time, or can trusted runs auto-create research spikes?
-- Should the Launch Intake Candidate 1 issue be created now, or should Overwatch own the packet contract directly?
+- Where should the Launch Intake pilot KB live: inside Overwatch, a new local project folder, or a future repo?
 - Should Product Pipeline use the existing Nexa safe-task claim protocol immediately, or wait until implementation work starts?
 - Should the first module artifact live as a Codex skill under this repo, a Nexa-AOS skill, or both during development?
 
@@ -42,7 +42,7 @@ Review the Launch Intake proposal. If accepted, create or assign Candidate 1 fir
 - `docs/superpowers/specs/2026-05-16-product-pipeline-v0-design.md` - v0 design draft awaiting Richard review.
 - `docs/superpowers/plans/2026-05-16-product-pipeline-v0-implementation.md` - implementation plan for v0 workflow artifacts.
 - `product-pipeline/` - v0 Product Pipeline artifact workspace.
-- `product-pipeline/templates/` - intake, research, comparison, opportunity, design, epic, issue, and parent-KB update templates.
+- `product-pipeline/templates/` - intake, research, comparison, opportunity, design, epic, issue, launch packet, and parent-KB update templates.
 - `product-pipeline/workflows/product-pipeline-v0.md` - end-to-end v0 artifact workflow.
 - `product-pipeline/checklists/readiness-gate.md` - ready-for-GitHub issue gate.
 - `product-pipeline/checklists/design-needed-gate.md` - design-collaboration routing gate.
@@ -50,7 +50,10 @@ Review the Launch Intake proposal. If accepted, create or assign Candidate 1 fir
 - `product-pipeline/how-to/create-github-output-from-proposal.md` - review-gated procedure for creating approved GitHub issues and Project items.
 - `product-pipeline/reviews/2026-05-18-v0-activation-review.md` - Overwatch `#4` activation review and accepted v0 baseline decision.
 - `product-pipeline/runs/2026-05-18-nodera-launch-intake/` - first Overwatch `#7` Product Pipeline run for a small reusable pilot idea.
+- `product-pipeline/runs/2026-05-18-nodera-launch-intake/launch-intake-packet.md` - accepted concrete packet for the next KB Core handoff.
 - `product-pipeline/proposals/2026-05-18-nodera-launch-intake-pilot-proposal.md` - review-needed GitHub output proposal for Launch Intake issue candidates.
+- `product-pipeline/templates/launch-intake-packet.md` - reusable packet contract template for future launch workflows.
+- `https://github.com/4-10/Nexa-ProductPipeline/issues/1` - live tracker item for the Launch Intake packet contract.
 - `.github/ISSUE_TEMPLATE/` - initial research spike, feature/story, and defect issue forms.
 - GitHub labels - initial type, area, and claim labels for module work.
 - `shared/reference/architecture.md` - first module-boundary reference.
@@ -61,7 +64,7 @@ Review the Launch Intake proposal. If accepted, create or assign Candidate 1 fir
 
 ## Active Testbed / Environment
 
-KB and GitHub Project only. No Product Pipeline runtime, CLI, service, skill, prompt pack, or automation artifact exists yet. The accepted v0 artifact set has produced one review-gated pilot run.
+KB and GitHub Project only. No Product Pipeline runtime, CLI, service, skill, prompt pack, or automation artifact exists yet. The accepted v0 artifact set has produced one review-gated pilot run and one reusable packet contract.
 
 ## Failure Modes To Watch For
 

@@ -16,7 +16,8 @@ The pilot should prove a lightweight front door for future Nodera product ideas 
 6. [Issue candidates](issue-candidates.md)
 7. [Readiness review](readiness-review.md)
 8. [Parent KB update plan](parent-kb-update-plan.md)
-9. [GitHub output proposal](../../proposals/2026-05-18-nodera-launch-intake-pilot-proposal.md)
+9. [Launch Intake packet](launch-intake-packet.md)
+10. [GitHub output proposal](../../proposals/2026-05-18-nodera-launch-intake-pilot-proposal.md)
 
 ## Recommendation
 

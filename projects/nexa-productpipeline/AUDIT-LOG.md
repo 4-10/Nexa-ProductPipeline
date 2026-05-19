@@ -2,6 +2,16 @@
 
 Append meaningful changes in reverse chronological order.
 
+## 2026-05-18 - Add Launch Intake packet contract
+
+**What:** Created approved issue `4-10/Nexa-ProductPipeline#1`, added it to GitHub Project `#4`, and implemented the reusable Launch Intake packet contract as both a template and a concrete packet for the Nodera Launch Intake run.
+
+**Why:** Overwatch `#7` needed a reusable handoff artifact before initializing the pilot KB or touching AppBuilder.
+
+**Files:** `product-pipeline/templates/launch-intake-packet.md`, `product-pipeline/runs/2026-05-18-nodera-launch-intake/launch-intake-packet.md`, `product-pipeline/workflows/product-pipeline-v0.md`, `product-pipeline/runs/2026-05-18-nodera-launch-intake/`, `product-pipeline/proposals/2026-05-18-nodera-launch-intake-pilot-proposal.md`, `product-pipeline/proposals/issue-bodies/launch-intake-packet-contract.md`, `product-pipeline/README.md`, `INDEX.md`, `projects/nexa-productpipeline/CURRENT-STATE.md`, `projects/nexa-productpipeline/DECISION-LOG.md`, `projects/nexa-productpipeline/AUDIT-LOG.md`.
+
+**Verification:** `gh issue view 1 --repo 4-10/Nexa-ProductPipeline` confirmed the issue and labels; `gh project item-list 4 --owner 4-10 --limit 100 --format json` confirmed Project status `In Progress`, Work Type `Task`, Readiness Gate `Draft Ready`, and Module Boundary `Product Pipeline`; local Markdown link check passed; placeholder scan returned no unresolved patterns; vertical-source scan found only known seed references/generic wording; `git diff --check` passed.
+
 ## 2026-05-18 - Create Launch Intake pilot artifact run
 
 **What:** Used Product Pipeline v0 for Overwatch `#7` and produced a Nodera Launch Intake pilot run with intake, research, comparative analysis, opportunity, epic, candidate, readiness, parent-KB update, and GitHub-output proposal artifacts.
