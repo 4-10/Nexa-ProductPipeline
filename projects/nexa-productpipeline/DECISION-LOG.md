@@ -2,6 +2,28 @@
 
 Record durable decisions in reverse chronological order.
 
+## 2026-05-19 - Accept Launch Intake Desk artifact run as Draft Ready
+
+**Tags:** launch-intake, artifact-review, readiness-gate, github-output
+
+**Context:** Candidate 1 asked Product Pipeline to review the generated Launch Intake Desk artifact run and decide whether it was accepted, needed revision, or should drive the next live output.
+
+**Options considered:**
+
+- A: Accept the artifact run as Draft Ready review output.
+- B: Revise the generated run before closing the review issue.
+- C: Convert gaps directly into new live GitHub issues.
+
+**Decision:** Choose A.
+
+**Why:** The artifact set is coherent and traceable, and it correctly preserves the missing external research and design work as known blockers. It is strong enough to accept as Product Pipeline review output, but not strong enough to become Dev Ready work.
+
+**Consequences:**
+
+- `4-10/Nexa-ProductPipeline#2` can close once the outcome is posted.
+- Missing external research, public design, pricing/payment, IP protection, and customer-handoff architecture remain known gaps.
+- Additional live GitHub issue output still requires a separate approval checkpoint.
+
 ## 2026-05-19 - Approve Candidate 1 live review issue only
 
 **Tags:** github-output, launch-intake, review-gate, issue-creation
