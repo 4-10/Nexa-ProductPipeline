@@ -4,7 +4,7 @@
 
 | Candidate | Gate | Reason |
 |---|---|---|
-| Define Launch Packet Contract | Accepted | Created as `4-10/Nexa-ProductPipeline#1`; packet template and concrete packet are now available. |
+| Define Launch Packet Contract | Accepted | Created as `4-10/Nexa-ProductPipeline#1`; packet template and concrete packet are now available; issue closed/Done after implementation. |
 | Initialize Launch Intake Pilot KB | Draft Ready | Bootstrap path exists, but destination/scaffold mode should be confirmed before bootstrap. |
 | Add Optional Command-Center Intake Surface | Blocked | AppBuilder substrate decision is still open. |
 

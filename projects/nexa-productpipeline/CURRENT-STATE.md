@@ -7,11 +7,11 @@
 
 The Nexa Product Pipeline repository has been cloned and initialized with a sanitized working KB based on the Project-X KB pattern. A repo-linked GitHub Project has been created for module work tracking.
 
-The active focus is that Product Pipeline v0 has now produced the first reusable Launch Intake handoff packet for Overwatch `#7`. Candidate 1 was approved, created as `4-10/Nexa-ProductPipeline#1`, and implemented as a packet template plus concrete Launch Intake packet. Candidate 2 and Candidate 3 remain deferred.
+The active focus is that Product Pipeline v0 has now produced the first reusable Launch Intake handoff packet for Overwatch `#7`. Candidate 1 was approved, created as `4-10/Nexa-ProductPipeline#1`, implemented as a packet template plus concrete Launch Intake packet, closed, and moved to Done in Project `#4`. Candidate 2 and Candidate 3 remain deferred.
 
 ## Last Action Taken
 
-Created `4-10/Nexa-ProductPipeline#1` from the approved Launch Intake proposal and added the reusable Launch Intake packet contract artifacts.
+Closed `4-10/Nexa-ProductPipeline#1` after adding the reusable Launch Intake packet contract artifacts at `27f1197`.
 
 ## Next Intended Move
 
@@ -53,7 +53,7 @@ Use the accepted Launch Intake packet to decide the pilot KB destination and sca
 - `product-pipeline/runs/2026-05-18-nodera-launch-intake/launch-intake-packet.md` - accepted concrete packet for the next KB Core handoff.
 - `product-pipeline/proposals/2026-05-18-nodera-launch-intake-pilot-proposal.md` - review-needed GitHub output proposal for Launch Intake issue candidates.
 - `product-pipeline/templates/launch-intake-packet.md` - reusable packet contract template for future launch workflows.
-- `https://github.com/4-10/Nexa-ProductPipeline/issues/1` - live tracker item for the Launch Intake packet contract.
+- `https://github.com/4-10/Nexa-ProductPipeline/issues/1` - closed/Done tracker item for the Launch Intake packet contract.
 - `.github/ISSUE_TEMPLATE/` - initial research spike, feature/story, and defect issue forms.
 - GitHub labels - initial type, area, and claim labels for module work.
 - `shared/reference/architecture.md` - first module-boundary reference.

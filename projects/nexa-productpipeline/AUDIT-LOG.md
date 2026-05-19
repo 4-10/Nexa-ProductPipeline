@@ -10,7 +10,7 @@ Append meaningful changes in reverse chronological order.
 
 **Files:** `product-pipeline/templates/launch-intake-packet.md`, `product-pipeline/runs/2026-05-18-nodera-launch-intake/launch-intake-packet.md`, `product-pipeline/workflows/product-pipeline-v0.md`, `product-pipeline/runs/2026-05-18-nodera-launch-intake/`, `product-pipeline/proposals/2026-05-18-nodera-launch-intake-pilot-proposal.md`, `product-pipeline/proposals/issue-bodies/launch-intake-packet-contract.md`, `product-pipeline/README.md`, `INDEX.md`, `projects/nexa-productpipeline/CURRENT-STATE.md`, `projects/nexa-productpipeline/DECISION-LOG.md`, `projects/nexa-productpipeline/AUDIT-LOG.md`.
 
-**Verification:** `gh issue view 1 --repo 4-10/Nexa-ProductPipeline` confirmed the issue and labels; `gh project item-list 4 --owner 4-10 --limit 100 --format json` confirmed Project status `In Progress`, Work Type `Task`, Readiness Gate `Draft Ready`, and Module Boundary `Product Pipeline`; local Markdown link check passed; placeholder scan returned no unresolved patterns; vertical-source scan found only known seed references/generic wording; `git diff --check` passed.
+**Verification:** `gh issue view 1 --repo 4-10/Nexa-ProductPipeline` confirmed the issue is closed with the expected labels; `gh project item-list 4 --owner 4-10 --limit 100 --format json` confirmed Project status `Done`, Work Type `Task`, Readiness Gate `Draft Ready`, and Module Boundary `Product Pipeline`; local Markdown link check passed; placeholder scan returned no unresolved patterns; vertical-source scan found only known seed references/generic wording; `git diff --check` passed.
 
 ## 2026-05-18 - Create Launch Intake pilot artifact run
 

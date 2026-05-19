@@ -9,6 +9,8 @@ parent_overwatch_issue: 4-10/NoderaOS-Overwatch#7
 product_pipeline_run: product-pipeline/runs/2026-05-18-nodera-launch-intake
 created_issues:
   - 4-10/Nexa-ProductPipeline#1
+closed_issues:
+  - 4-10/Nexa-ProductPipeline#1
 ```
 
 ## Recommendation
@@ -157,7 +159,7 @@ create_now: false
 
 This proposal intentionally stops before GitHub issue creation.
 
-Update after review: Candidate 1 was approved and created as `4-10/Nexa-ProductPipeline#1`. Candidate 2 and Candidate 3 remain deferred.
+Update after review: Candidate 1 was approved, created as `4-10/Nexa-ProductPipeline#1`, implemented at `27f1197`, and closed/Done. Candidate 2 and Candidate 3 remain deferred.
 
 Review decision needed:
 
