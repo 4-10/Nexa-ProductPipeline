@@ -2,6 +2,16 @@
 
 Append meaningful changes in reverse chronological order.
 
+## 2026-05-20 - Cleaned stale worktree and compacted state dashboard
+
+**What:** Removed the completed repo-local `product-pipeline-v0-artifacts` worktree after confirming it was merged, deleted the merged local branch, and rewrote `CURRENT-STATE.md` plus `STATE-SNAPSHOT.md` as compact operator surfaces.
+
+**Why:** The Product Pipeline repo should stay review-gated and easy to orient. The old temporary worktree and long current-state prose were stale now that the accepted work is on `main`.
+
+**Files:** `projects/nexa-productpipeline/CURRENT-STATE.md`, `projects/nexa-productpipeline/STATE-SNAPSHOT.md`, `projects/nexa-productpipeline/AUDIT-LOG.md`.
+
+**Verification:** `git worktree list --porcelain` shows only the main Product Pipeline worktree; `git branch --merged main` no longer lists `product-pipeline-v0-artifacts`; `product-pipeline/tools/Test-ProductPipelineRunFromPacket.ps1` passed during the audit.
+
 ## 2026-05-19 - Complete managed-pilot offer validation
 
 **What:** Added `product-pipeline/research/2026-05-19-launch-intake-managed-pilot-offer-validation.md` as the accepted Research-gate output for `4-10/Nexa-ProductPipeline#3`, routed it through `INDEX.md`, recorded the private pricing hypothesis decision, and moved the Project `#4` row to Done after the issue closed.
